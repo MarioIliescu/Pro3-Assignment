@@ -1,62 +1,45 @@
 package via.pro3.slaughterhouse.model;
 
-
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
-
 @Entity
-@Table(name = "product_to_part", schema = "slaughterhouse")
+public class ProductToPart {
 
-public class ProductToPart
-{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private int id;
+    @Column(name = "product_id")
+    private Integer productId;
 
-  private int productId;
-  private int partId;
+    @Column(name = "part_id")
+    private Integer partId;
 
-  private int quantity;
+    @Column(name = "quantity")
+    private Integer quantity;
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public Integer getProductId() {
+        return productId;
+    }
+    public void setProductId(Integer productId) {
+        this.productId = productId;
+    }
 
-  public int getId()
-  {
-    return id;
-  }
-
-  public void setId(int id)
-  {
-    this.id = id;
-  }
-
-  public int getProductId()
-  {
-    return productId;
-  }
-
-  public void setProductId(int productId)
-  {
-    this.productId = productId;
-  }
-
-  public int getPartId()
-  {
-    return partId;
-  }
-
-  public void setPartId(int partId)
-  {
-    this.partId = partId;
-  }
-
-  public int getQuantity()
-  {
-    return quantity;
-  }
-
-  public void setQuantity(int quantity)
-  {
-    this.quantity = quantity;
-  }
-
+    public Integer getPartId() {
+        return partId;
+    }
+    public void setAnimalPartId(Integer partId) {
+        this.partId = partId;
+    }
+    public Integer getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 }
-

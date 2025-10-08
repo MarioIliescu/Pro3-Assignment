@@ -24,6 +24,7 @@ public class AnimalPartService
     via.pro3.slaughterhouse.model.AnimalPart animalPart =
         new via.pro3.slaughterhouse.model.AnimalPart();
     animalPart.setId(request.getPart().getAnimalId());
+    animalPart.setAnimalId(request.getPart().getAnimalId());
     animalPart.setPartType(request.getPart().getPartType());
     animalPart.setWeight(request.getPart().getWeight());
 
@@ -39,12 +40,12 @@ public class AnimalPartService
   }
 
   public via.pro3.slaughterhouse.model.AnimalPart createAnimalPart(
-      AnimalPart request) {
+      CreateAnimalPartRequest request) {
     via.pro3.slaughterhouse.model.AnimalPart animalPart = new via.pro3.slaughterhouse.model.AnimalPart();
-    animalPart.setId(request.getId());
-    animalPart.setAnimalId(request.getAnimalId());
-    animalPart.setWeight(request.getWeight());
-    animalPart.setPartType(request.getPartType());
+    animalPart.setId( request.getPart().getId());
+    animalPart.setAnimalId(request.getPart().getAnimalId());
+    animalPart.setWeight(request.getPart().getWeight());
+    animalPart.setPartType(request.getPart().getPartType());
 
     partRepository.save(animalPart);
 

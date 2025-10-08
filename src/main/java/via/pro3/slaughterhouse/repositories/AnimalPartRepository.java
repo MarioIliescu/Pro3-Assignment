@@ -7,5 +7,4 @@ import java.util.Optional;
 
 public interface AnimalPartRepository  extends JpaRepository<AnimalPart, Integer>
 {
-  Optional<AnimalPart> findByRegistrationNumber(String registrationNumber);
 }
