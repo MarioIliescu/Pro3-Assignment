@@ -8,5 +8,4 @@ import java.util.Optional;
 
 public interface TrayRepository extends JpaRepository<Tray, Integer>
 {
-  Optional<Tray> findByRegistrationNumber(String registrationNumber);
 }

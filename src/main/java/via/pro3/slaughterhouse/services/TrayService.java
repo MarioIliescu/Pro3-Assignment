@@ -1,7 +1,6 @@
 package via.pro3.slaughterhouse.services;
 
 
-import com.google.protobuf.Timestamp;
 import com.slaughterhouse.grpc.*;
 import com.slaughterhouse.grpc.Error;
 import org.springframework.stereotype.Service;
@@ -24,6 +23,7 @@ public class TrayService {
   public CreateTrayResponse createTray(CreateTrayRequest request) {
     Tray entity = new Tray();
     entity.setMaxWeight(request.getTray().getMaxWeight());
+    entity.setPart_type(request.getTray().getPartType());
 
     trayRepository.save(entity);
 
@@ -72,7 +72,7 @@ public class TrayService {
   private com.slaughterhouse.grpc.Tray entityToProto(Tray entity) {
     return com.slaughterhouse.grpc.Tray.newBuilder()
         .setId(entity.getId())
-        .setPartType(entity.getAnimalPart().getPartType() != null ? entity.getAnimalPart().getPartType() : "")
+        .setPartType(entity.getPart_type())
         .setMaxWeight(entity.getMaxWeight())
         .build();
   }

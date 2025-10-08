@@ -18,12 +18,14 @@ public class AnimalPart {
   private double weight;
   private String partType;
 
-  // getters and setters
+
+
+    // getters and setters
   public Integer getId() { return id; }
   public void setId(Integer id) { this.id = id; }
 
   public Integer getAnimalId() { return animalId; }
-  public void setAnimalId(Integer registrationNumber) { this.animalId = animalId; }
+  public void setAnimalId(Integer animalId) { this.animalId = animalId; }
 
   public double getWeight() { return weight; }
   public void setWeight(double weight) { this.weight = weight; }
