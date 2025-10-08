@@ -136,7 +136,8 @@ class ProductToPartServiceTest {
     }
 
     @Test
-    void deleteProductToPart_found_deletes() {
+    void deleteProductToPart_found_deletes()
+    {
         // given
         when(productToPartRepository.existsById(3)).thenReturn(true);
 
