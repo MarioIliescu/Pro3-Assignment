@@ -8,17 +8,17 @@ public interface CreateProductRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
    * @return Whether the product field is set.
    */
   boolean hasProduct();
   /**
-   * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
    * @return The product.
    */
-  com.slaughterhouse.grpc.Product getProduct();
+  com.slaughterhouse.grpc.ProductProto getProduct();
   /**
-   * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
    */
-  com.slaughterhouse.grpc.ProductOrBuilder getProductOrBuilder();
+  com.slaughterhouse.grpc.ProductProtoOrBuilder getProductOrBuilder();
 }

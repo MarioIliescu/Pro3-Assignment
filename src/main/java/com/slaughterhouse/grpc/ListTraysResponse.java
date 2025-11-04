@@ -52,11 +52,11 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              trays_ = new java.util.ArrayList<com.slaughterhouse.grpc.Tray>();
+              trays_ = new java.util.ArrayList<com.slaughterhouse.grpc.TrayProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             trays_.add(
-                input.readMessage(com.slaughterhouse.grpc.Tray.parser(), extensionRegistry));
+                input.readMessage(com.slaughterhouse.grpc.TrayProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -97,41 +97,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TRAYS_FIELD_NUMBER = 1;
-  private java.util.List<com.slaughterhouse.grpc.Tray> trays_;
+  private java.util.List<com.slaughterhouse.grpc.TrayProto> trays_;
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<com.slaughterhouse.grpc.Tray> getTraysList() {
+  public java.util.List<com.slaughterhouse.grpc.TrayProto> getTraysList() {
     return trays_;
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.slaughterhouse.grpc.TrayOrBuilder> 
+  public java.util.List<? extends com.slaughterhouse.grpc.TrayProtoOrBuilder> 
       getTraysOrBuilderList() {
     return trays_;
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
   @java.lang.Override
   public int getTraysCount() {
     return trays_.size();
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.Tray getTrays(int index) {
+  public com.slaughterhouse.grpc.TrayProto getTrays(int index) {
     return trays_.get(index);
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.TrayOrBuilder getTraysOrBuilder(
+  public com.slaughterhouse.grpc.TrayProtoOrBuilder getTraysOrBuilder(
       int index) {
     return trays_.get(index);
   }
@@ -478,22 +478,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.slaughterhouse.grpc.Tray> trays_ =
+    private java.util.List<com.slaughterhouse.grpc.TrayProto> trays_ =
       java.util.Collections.emptyList();
     private void ensureTraysIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        trays_ = new java.util.ArrayList<com.slaughterhouse.grpc.Tray>(trays_);
+        trays_ = new java.util.ArrayList<com.slaughterhouse.grpc.TrayProto>(trays_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.slaughterhouse.grpc.Tray, com.slaughterhouse.grpc.Tray.Builder, com.slaughterhouse.grpc.TrayOrBuilder> traysBuilder_;
+        com.slaughterhouse.grpc.TrayProto, com.slaughterhouse.grpc.TrayProto.Builder, com.slaughterhouse.grpc.TrayProtoOrBuilder> traysBuilder_;
 
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public java.util.List<com.slaughterhouse.grpc.Tray> getTraysList() {
+    public java.util.List<com.slaughterhouse.grpc.TrayProto> getTraysList() {
       if (traysBuilder_ == null) {
         return java.util.Collections.unmodifiableList(trays_);
       } else {
@@ -501,7 +501,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public int getTraysCount() {
       if (traysBuilder_ == null) {
@@ -511,9 +511,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public com.slaughterhouse.grpc.Tray getTrays(int index) {
+    public com.slaughterhouse.grpc.TrayProto getTrays(int index) {
       if (traysBuilder_ == null) {
         return trays_.get(index);
       } else {
@@ -521,10 +521,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder setTrays(
-        int index, com.slaughterhouse.grpc.Tray value) {
+        int index, com.slaughterhouse.grpc.TrayProto value) {
       if (traysBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -538,10 +538,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder setTrays(
-        int index, com.slaughterhouse.grpc.Tray.Builder builderForValue) {
+        int index, com.slaughterhouse.grpc.TrayProto.Builder builderForValue) {
       if (traysBuilder_ == null) {
         ensureTraysIsMutable();
         trays_.set(index, builderForValue.build());
@@ -552,9 +552,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public Builder addTrays(com.slaughterhouse.grpc.Tray value) {
+    public Builder addTrays(com.slaughterhouse.grpc.TrayProto value) {
       if (traysBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -568,10 +568,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder addTrays(
-        int index, com.slaughterhouse.grpc.Tray value) {
+        int index, com.slaughterhouse.grpc.TrayProto value) {
       if (traysBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -585,10 +585,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder addTrays(
-        com.slaughterhouse.grpc.Tray.Builder builderForValue) {
+        com.slaughterhouse.grpc.TrayProto.Builder builderForValue) {
       if (traysBuilder_ == null) {
         ensureTraysIsMutable();
         trays_.add(builderForValue.build());
@@ -599,10 +599,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder addTrays(
-        int index, com.slaughterhouse.grpc.Tray.Builder builderForValue) {
+        int index, com.slaughterhouse.grpc.TrayProto.Builder builderForValue) {
       if (traysBuilder_ == null) {
         ensureTraysIsMutable();
         trays_.add(index, builderForValue.build());
@@ -613,10 +613,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder addAllTrays(
-        java.lang.Iterable<? extends com.slaughterhouse.grpc.Tray> values) {
+        java.lang.Iterable<? extends com.slaughterhouse.grpc.TrayProto> values) {
       if (traysBuilder_ == null) {
         ensureTraysIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -628,7 +628,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder clearTrays() {
       if (traysBuilder_ == null) {
@@ -641,7 +641,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
     public Builder removeTrays(int index) {
       if (traysBuilder_ == null) {
@@ -654,16 +654,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public com.slaughterhouse.grpc.Tray.Builder getTraysBuilder(
+    public com.slaughterhouse.grpc.TrayProto.Builder getTraysBuilder(
         int index) {
       return getTraysFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public com.slaughterhouse.grpc.TrayOrBuilder getTraysOrBuilder(
+    public com.slaughterhouse.grpc.TrayProtoOrBuilder getTraysOrBuilder(
         int index) {
       if (traysBuilder_ == null) {
         return trays_.get(index);  } else {
@@ -671,9 +671,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public java.util.List<? extends com.slaughterhouse.grpc.TrayOrBuilder> 
+    public java.util.List<? extends com.slaughterhouse.grpc.TrayProtoOrBuilder> 
          getTraysOrBuilderList() {
       if (traysBuilder_ != null) {
         return traysBuilder_.getMessageOrBuilderList();
@@ -682,33 +682,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public com.slaughterhouse.grpc.Tray.Builder addTraysBuilder() {
+    public com.slaughterhouse.grpc.TrayProto.Builder addTraysBuilder() {
       return getTraysFieldBuilder().addBuilder(
-          com.slaughterhouse.grpc.Tray.getDefaultInstance());
+          com.slaughterhouse.grpc.TrayProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public com.slaughterhouse.grpc.Tray.Builder addTraysBuilder(
+    public com.slaughterhouse.grpc.TrayProto.Builder addTraysBuilder(
         int index) {
       return getTraysFieldBuilder().addBuilder(
-          index, com.slaughterhouse.grpc.Tray.getDefaultInstance());
+          index, com.slaughterhouse.grpc.TrayProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
      */
-    public java.util.List<com.slaughterhouse.grpc.Tray.Builder> 
+    public java.util.List<com.slaughterhouse.grpc.TrayProto.Builder> 
          getTraysBuilderList() {
       return getTraysFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.slaughterhouse.grpc.Tray, com.slaughterhouse.grpc.Tray.Builder, com.slaughterhouse.grpc.TrayOrBuilder> 
+        com.slaughterhouse.grpc.TrayProto, com.slaughterhouse.grpc.TrayProto.Builder, com.slaughterhouse.grpc.TrayProtoOrBuilder> 
         getTraysFieldBuilder() {
       if (traysBuilder_ == null) {
         traysBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.slaughterhouse.grpc.Tray, com.slaughterhouse.grpc.Tray.Builder, com.slaughterhouse.grpc.TrayOrBuilder>(
+            com.slaughterhouse.grpc.TrayProto, com.slaughterhouse.grpc.TrayProto.Builder, com.slaughterhouse.grpc.TrayProtoOrBuilder>(
                 trays_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

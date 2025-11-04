@@ -52,11 +52,11 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              parts_ = new java.util.ArrayList<com.slaughterhouse.grpc.AnimalPart>();
+              parts_ = new java.util.ArrayList<com.slaughterhouse.grpc.AnimalPartProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             parts_.add(
-                input.readMessage(com.slaughterhouse.grpc.AnimalPart.parser(), extensionRegistry));
+                input.readMessage(com.slaughterhouse.grpc.AnimalPartProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -97,41 +97,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PARTS_FIELD_NUMBER = 1;
-  private java.util.List<com.slaughterhouse.grpc.AnimalPart> parts_;
+  private java.util.List<com.slaughterhouse.grpc.AnimalPartProto> parts_;
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<com.slaughterhouse.grpc.AnimalPart> getPartsList() {
+  public java.util.List<com.slaughterhouse.grpc.AnimalPartProto> getPartsList() {
     return parts_;
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.slaughterhouse.grpc.AnimalPartOrBuilder> 
+  public java.util.List<? extends com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> 
       getPartsOrBuilderList() {
     return parts_;
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
   @java.lang.Override
   public int getPartsCount() {
     return parts_.size();
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.AnimalPart getParts(int index) {
+  public com.slaughterhouse.grpc.AnimalPartProto getParts(int index) {
     return parts_.get(index);
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.AnimalPartOrBuilder getPartsOrBuilder(
+  public com.slaughterhouse.grpc.AnimalPartProtoOrBuilder getPartsOrBuilder(
       int index) {
     return parts_.get(index);
   }
@@ -478,22 +478,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.slaughterhouse.grpc.AnimalPart> parts_ =
+    private java.util.List<com.slaughterhouse.grpc.AnimalPartProto> parts_ =
       java.util.Collections.emptyList();
     private void ensurePartsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        parts_ = new java.util.ArrayList<com.slaughterhouse.grpc.AnimalPart>(parts_);
+        parts_ = new java.util.ArrayList<com.slaughterhouse.grpc.AnimalPartProto>(parts_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.slaughterhouse.grpc.AnimalPart, com.slaughterhouse.grpc.AnimalPart.Builder, com.slaughterhouse.grpc.AnimalPartOrBuilder> partsBuilder_;
+        com.slaughterhouse.grpc.AnimalPartProto, com.slaughterhouse.grpc.AnimalPartProto.Builder, com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> partsBuilder_;
 
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public java.util.List<com.slaughterhouse.grpc.AnimalPart> getPartsList() {
+    public java.util.List<com.slaughterhouse.grpc.AnimalPartProto> getPartsList() {
       if (partsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(parts_);
       } else {
@@ -501,7 +501,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public int getPartsCount() {
       if (partsBuilder_ == null) {
@@ -511,9 +511,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPart getParts(int index) {
+    public com.slaughterhouse.grpc.AnimalPartProto getParts(int index) {
       if (partsBuilder_ == null) {
         return parts_.get(index);
       } else {
@@ -521,10 +521,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder setParts(
-        int index, com.slaughterhouse.grpc.AnimalPart value) {
+        int index, com.slaughterhouse.grpc.AnimalPartProto value) {
       if (partsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -538,10 +538,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder setParts(
-        int index, com.slaughterhouse.grpc.AnimalPart.Builder builderForValue) {
+        int index, com.slaughterhouse.grpc.AnimalPartProto.Builder builderForValue) {
       if (partsBuilder_ == null) {
         ensurePartsIsMutable();
         parts_.set(index, builderForValue.build());
@@ -552,9 +552,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public Builder addParts(com.slaughterhouse.grpc.AnimalPart value) {
+    public Builder addParts(com.slaughterhouse.grpc.AnimalPartProto value) {
       if (partsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -568,10 +568,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder addParts(
-        int index, com.slaughterhouse.grpc.AnimalPart value) {
+        int index, com.slaughterhouse.grpc.AnimalPartProto value) {
       if (partsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -585,10 +585,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder addParts(
-        com.slaughterhouse.grpc.AnimalPart.Builder builderForValue) {
+        com.slaughterhouse.grpc.AnimalPartProto.Builder builderForValue) {
       if (partsBuilder_ == null) {
         ensurePartsIsMutable();
         parts_.add(builderForValue.build());
@@ -599,10 +599,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder addParts(
-        int index, com.slaughterhouse.grpc.AnimalPart.Builder builderForValue) {
+        int index, com.slaughterhouse.grpc.AnimalPartProto.Builder builderForValue) {
       if (partsBuilder_ == null) {
         ensurePartsIsMutable();
         parts_.add(index, builderForValue.build());
@@ -613,10 +613,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder addAllParts(
-        java.lang.Iterable<? extends com.slaughterhouse.grpc.AnimalPart> values) {
+        java.lang.Iterable<? extends com.slaughterhouse.grpc.AnimalPartProto> values) {
       if (partsBuilder_ == null) {
         ensurePartsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -628,7 +628,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder clearParts() {
       if (partsBuilder_ == null) {
@@ -641,7 +641,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
     public Builder removeParts(int index) {
       if (partsBuilder_ == null) {
@@ -654,16 +654,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPart.Builder getPartsBuilder(
+    public com.slaughterhouse.grpc.AnimalPartProto.Builder getPartsBuilder(
         int index) {
       return getPartsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPartOrBuilder getPartsOrBuilder(
+    public com.slaughterhouse.grpc.AnimalPartProtoOrBuilder getPartsOrBuilder(
         int index) {
       if (partsBuilder_ == null) {
         return parts_.get(index);  } else {
@@ -671,9 +671,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public java.util.List<? extends com.slaughterhouse.grpc.AnimalPartOrBuilder> 
+    public java.util.List<? extends com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> 
          getPartsOrBuilderList() {
       if (partsBuilder_ != null) {
         return partsBuilder_.getMessageOrBuilderList();
@@ -682,33 +682,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPart.Builder addPartsBuilder() {
+    public com.slaughterhouse.grpc.AnimalPartProto.Builder addPartsBuilder() {
       return getPartsFieldBuilder().addBuilder(
-          com.slaughterhouse.grpc.AnimalPart.getDefaultInstance());
+          com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPart.Builder addPartsBuilder(
+    public com.slaughterhouse.grpc.AnimalPartProto.Builder addPartsBuilder(
         int index) {
       return getPartsFieldBuilder().addBuilder(
-          index, com.slaughterhouse.grpc.AnimalPart.getDefaultInstance());
+          index, com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
      */
-    public java.util.List<com.slaughterhouse.grpc.AnimalPart.Builder> 
+    public java.util.List<com.slaughterhouse.grpc.AnimalPartProto.Builder> 
          getPartsBuilderList() {
       return getPartsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.slaughterhouse.grpc.AnimalPart, com.slaughterhouse.grpc.AnimalPart.Builder, com.slaughterhouse.grpc.AnimalPartOrBuilder> 
+        com.slaughterhouse.grpc.AnimalPartProto, com.slaughterhouse.grpc.AnimalPartProto.Builder, com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> 
         getPartsFieldBuilder() {
       if (partsBuilder_ == null) {
         partsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.slaughterhouse.grpc.AnimalPart, com.slaughterhouse.grpc.AnimalPart.Builder, com.slaughterhouse.grpc.AnimalPartOrBuilder>(
+            com.slaughterhouse.grpc.AnimalPartProto, com.slaughterhouse.grpc.AnimalPartProto.Builder, com.slaughterhouse.grpc.AnimalPartProtoOrBuilder>(
                 parts_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

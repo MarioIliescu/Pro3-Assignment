@@ -8,26 +8,26 @@ public interface ListAnimalPartsResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
-  java.util.List<com.slaughterhouse.grpc.AnimalPart> 
+  java.util.List<com.slaughterhouse.grpc.AnimalPartProto> 
       getPartsList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
-  com.slaughterhouse.grpc.AnimalPart getParts(int index);
+  com.slaughterhouse.grpc.AnimalPartProto getParts(int index);
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
   int getPartsCount();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
-  java.util.List<? extends com.slaughterhouse.grpc.AnimalPartOrBuilder> 
+  java.util.List<? extends com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> 
       getPartsOrBuilderList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.AnimalPart parts = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalPartProto parts = 1;</code>
    */
-  com.slaughterhouse.grpc.AnimalPartOrBuilder getPartsOrBuilder(
+  com.slaughterhouse.grpc.AnimalPartProtoOrBuilder getPartsOrBuilder(
       int index);
 }

@@ -4,26 +4,26 @@
 package com.slaughterhouse.grpc;
 
 /**
- * Protobuf type {@code via.pro3.slaughterhouse.AnimalPart}
+ * Protobuf type {@code via.pro3.slaughterhouse.AnimalPartProto}
  */
-public final class AnimalPart extends
+public final class AnimalPartProto extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:via.pro3.slaughterhouse.AnimalPart)
-    AnimalPartOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use AnimalPart.newBuilder() to construct.
-  private AnimalPart(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:via.pro3.slaughterhouse.AnimalPartProto)
+    AnimalPartProtoOrBuilder {
+private static final int serialVersionUID = 0;
+  // Use AnimalPartProto.newBuilder() to construct.
+  private AnimalPartProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private AnimalPart() {
-    partType_ = "";
+  private AnimalPartProto() {
+    partType = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new AnimalPart();
+    return new AnimalPartProto();
   }
 
   @java.lang.Override
@@ -31,7 +31,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private AnimalPart(
+  private AnimalPartProto(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -51,23 +51,23 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            id_ = input.readInt32();
+            id = input.readInt32();
             break;
           }
           case 16: {
 
-            animalId_ = input.readInt32();
+            animalId = input.readInt32();
             break;
           }
           case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            partType_ = s;
+            partType = s;
             break;
           }
           case 33: {
 
-            weight_ = input.readDouble();
+            weight = input.readDouble();
             break;
           }
           default: {
@@ -93,55 +93,55 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPart_descriptor;
+    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPartProto_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPart_fieldAccessorTable
+    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPartProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.slaughterhouse.grpc.AnimalPart.class, com.slaughterhouse.grpc.AnimalPart.Builder.class);
+            com.slaughterhouse.grpc.AnimalPartProto.class, com.slaughterhouse.grpc.AnimalPartProto.Builder.class);
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private int id_;
+  private int id;
   /**
    * <code>int32 id = 1;</code>
    * @return The id.
    */
   @java.lang.Override
   public int getId() {
-    return id_;
+    return id;
   }
 
   public static final int ANIMAL_ID_FIELD_NUMBER = 2;
-  private int animalId_;
+  private int animalId;
   /**
    * <code>int32 animal_id = 2;</code>
    * @return The animalId.
    */
   @java.lang.Override
   public int getAnimalId() {
-    return animalId_;
+    return animalId;
   }
 
   public static final int PART_TYPE_FIELD_NUMBER = 3;
-  private volatile java.lang.Object partType_;
+  private volatile java.lang.Object partType;
   /**
    * <code>string part_type = 3;</code>
    * @return The partType.
    */
   @java.lang.Override
   public java.lang.String getPartType() {
-    java.lang.Object ref = partType_;
+    java.lang.Object ref = partType;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      partType_ = s;
+      partType = s;
       return s;
     }
   }
@@ -152,12 +152,12 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public com.google.protobuf.ByteString
       getPartTypeBytes() {
-    java.lang.Object ref = partType_;
+    java.lang.Object ref = partType;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      partType_ = b;
+      partType = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -165,14 +165,14 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int WEIGHT_FIELD_NUMBER = 4;
-  private double weight_;
+  private double weight;
   /**
    * <code>double weight = 4;</code>
    * @return The weight.
    */
   @java.lang.Override
   public double getWeight() {
-    return weight_;
+    return weight;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -189,17 +189,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (id_ != 0) {
-      output.writeInt32(1, id_);
+    if (id != 0) {
+      output.writeInt32(1, id);
     }
-    if (animalId_ != 0) {
-      output.writeInt32(2, animalId_);
+    if (animalId != 0) {
+      output.writeInt32(2, animalId);
     }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(partType_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, partType_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(partType)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, partType);
     }
-    if (java.lang.Double.doubleToRawLongBits(weight_) != 0) {
-      output.writeDouble(4, weight_);
+    if (java.lang.Double.doubleToRawLongBits(weight) != 0) {
+      output.writeDouble(4, weight);
     }
     unknownFields.writeTo(output);
   }
@@ -210,20 +210,20 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (id_ != 0) {
+    if (id != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, id_);
+        .computeInt32Size(1, id);
     }
-    if (animalId_ != 0) {
+    if (animalId != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, animalId_);
+        .computeInt32Size(2, animalId);
     }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(partType_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, partType_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(partType)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, partType);
     }
-    if (java.lang.Double.doubleToRawLongBits(weight_) != 0) {
+    if (java.lang.Double.doubleToRawLongBits(weight) != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(4, weight_);
+        .computeDoubleSize(4, weight);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -235,10 +235,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.slaughterhouse.grpc.AnimalPart)) {
+    if (!(obj instanceof com.slaughterhouse.grpc.AnimalPartProto)) {
       return super.equals(obj);
     }
-    com.slaughterhouse.grpc.AnimalPart other = (com.slaughterhouse.grpc.AnimalPart) obj;
+    com.slaughterhouse.grpc.AnimalPartProto other = (com.slaughterhouse.grpc.AnimalPartProto) obj;
 
     if (getId()
         != other.getId()) return false;
@@ -274,69 +274,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(byte[] data)
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(java.io.InputStream input)
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseDelimitedFrom(java.io.InputStream input)
+  public static com.slaughterhouse.grpc.AnimalPartProto parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseDelimitedFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.slaughterhouse.grpc.AnimalPart parseFrom(
+  public static com.slaughterhouse.grpc.AnimalPartProto parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -349,7 +349,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.slaughterhouse.grpc.AnimalPart prototype) {
+  public static Builder newBuilder(com.slaughterhouse.grpc.AnimalPartProto prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -365,26 +365,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code via.pro3.slaughterhouse.AnimalPart}
+   * Protobuf type {@code via.pro3.slaughterhouse.AnimalPartProto}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:via.pro3.slaughterhouse.AnimalPart)
-      com.slaughterhouse.grpc.AnimalPartOrBuilder {
+      // @@protoc_insertion_point(builder_implements:via.pro3.slaughterhouse.AnimalPartProto)
+      com.slaughterhouse.grpc.AnimalPartProtoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPart_descriptor;
+      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPartProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPart_fieldAccessorTable
+      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPartProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.slaughterhouse.grpc.AnimalPart.class, com.slaughterhouse.grpc.AnimalPart.Builder.class);
+              com.slaughterhouse.grpc.AnimalPartProto.class, com.slaughterhouse.grpc.AnimalPartProto.Builder.class);
     }
 
-    // Construct using com.slaughterhouse.grpc.AnimalPart.newBuilder()
+    // Construct using com.slaughterhouse.grpc.AnimalPartProto.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -402,13 +402,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      id_ = 0;
+      id = 0;
 
-      animalId_ = 0;
+      animalId = 0;
 
-      partType_ = "";
+      partType = "";
 
-      weight_ = 0D;
+      weight = 0;
 
       return this;
     }
@@ -416,17 +416,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPart_descriptor;
+      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_AnimalPartProto_descriptor;
     }
 
     @java.lang.Override
-    public com.slaughterhouse.grpc.AnimalPart getDefaultInstanceForType() {
-      return com.slaughterhouse.grpc.AnimalPart.getDefaultInstance();
+    public com.slaughterhouse.grpc.AnimalPartProto getDefaultInstanceForType() {
+      return com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.slaughterhouse.grpc.AnimalPart build() {
-      com.slaughterhouse.grpc.AnimalPart result = buildPartial();
+    public com.slaughterhouse.grpc.AnimalPartProto build() {
+      com.slaughterhouse.grpc.AnimalPartProto result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -434,12 +434,12 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.slaughterhouse.grpc.AnimalPart buildPartial() {
-      com.slaughterhouse.grpc.AnimalPart result = new com.slaughterhouse.grpc.AnimalPart(this);
-      result.id_ = id_;
-      result.animalId_ = animalId_;
-      result.partType_ = partType_;
-      result.weight_ = weight_;
+    public com.slaughterhouse.grpc.AnimalPartProto buildPartial() {
+      com.slaughterhouse.grpc.AnimalPartProto result = new com.slaughterhouse.grpc.AnimalPartProto(this);
+      result.id = id;
+      result.animalId = animalId;
+      result.partType = partType;
+      result.weight = weight;
       onBuilt();
       return result;
     }
@@ -478,16 +478,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.slaughterhouse.grpc.AnimalPart) {
-        return mergeFrom((com.slaughterhouse.grpc.AnimalPart)other);
+      if (other instanceof com.slaughterhouse.grpc.AnimalPartProto) {
+        return mergeFrom((com.slaughterhouse.grpc.AnimalPartProto)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.slaughterhouse.grpc.AnimalPart other) {
-      if (other == com.slaughterhouse.grpc.AnimalPart.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.slaughterhouse.grpc.AnimalPartProto other) {
+      if (other == com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance()) return this;
       if (other.getId() != 0) {
         setId(other.getId());
       }
@@ -495,10 +495,10 @@ private static final long serialVersionUID = 0L;
         setAnimalId(other.getAnimalId());
       }
       if (!other.getPartType().isEmpty()) {
-        partType_ = other.partType_;
+        partType = other.partType;
         onChanged();
       }
-      if (other.getWeight() != 0D) {
+      if (other.getWeight() != 0) {
         setWeight(other.getWeight());
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -516,11 +516,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.slaughterhouse.grpc.AnimalPart parsedMessage = null;
+      com.slaughterhouse.grpc.AnimalPartProto parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.slaughterhouse.grpc.AnimalPart) e.getUnfinishedMessage();
+        parsedMessage = (com.slaughterhouse.grpc.AnimalPartProto) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -530,14 +530,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int id_ ;
+    private int id ;
     /**
      * <code>int32 id = 1;</code>
      * @return The id.
      */
     @java.lang.Override
     public int getId() {
-      return id_;
+      return id;
     }
     /**
      * <code>int32 id = 1;</code>
@@ -546,7 +546,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setId(int value) {
       
-      id_ = value;
+      id = value;
       onChanged();
       return this;
     }
@@ -556,19 +556,19 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearId() {
       
-      id_ = 0;
+      id = 0;
       onChanged();
       return this;
     }
 
-    private int animalId_ ;
+    private int animalId ;
     /**
      * <code>int32 animal_id = 2;</code>
      * @return The animalId.
      */
     @java.lang.Override
     public int getAnimalId() {
-      return animalId_;
+      return animalId;
     }
     /**
      * <code>int32 animal_id = 2;</code>
@@ -577,7 +577,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setAnimalId(int value) {
       
-      animalId_ = value;
+      animalId = value;
       onChanged();
       return this;
     }
@@ -587,23 +587,23 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAnimalId() {
       
-      animalId_ = 0;
+      animalId = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object partType_ = "";
+    private java.lang.Object partType = "";
     /**
      * <code>string part_type = 3;</code>
      * @return The partType.
      */
     public java.lang.String getPartType() {
-      java.lang.Object ref = partType_;
+      java.lang.Object ref = partType;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        partType_ = s;
+        partType = s;
         return s;
       } else {
         return (java.lang.String) ref;
@@ -615,12 +615,12 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPartTypeBytes() {
-      java.lang.Object ref = partType_;
+      java.lang.Object ref = partType;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        partType_ = b;
+        partType = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -637,7 +637,7 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   
-      partType_ = value;
+      partType = value;
       onChanged();
       return this;
     }
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPartType() {
       
-      partType_ = getDefaultInstance().getPartType();
+      partType = getDefaultInstance().getPartType();
       onChanged();
       return this;
     }
@@ -663,19 +663,19 @@ private static final long serialVersionUID = 0L;
   }
   checkByteStringIsUtf8(value);
       
-      partType_ = value;
+      partType = value;
       onChanged();
       return this;
     }
 
-    private double weight_ ;
+    private double weight ;
     /**
      * <code>double weight = 4;</code>
      * @return The weight.
      */
     @java.lang.Override
     public double getWeight() {
-      return weight_;
+      return weight;
     }
     /**
      * <code>double weight = 4;</code>
@@ -684,7 +684,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setWeight(double value) {
       
-      weight_ = value;
+      weight = value;
       onChanged();
       return this;
     }
@@ -694,7 +694,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearWeight() {
       
-      weight_ = 0D;
+      weight = 0;
       onChanged();
       return this;
     }
@@ -711,41 +711,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:via.pro3.slaughterhouse.AnimalPart)
+    // @@protoc_insertion_point(builder_scope:via.pro3.slaughterhouse.AnimalPartProto)
   }
 
-  // @@protoc_insertion_point(class_scope:via.pro3.slaughterhouse.AnimalPart)
-  private static final com.slaughterhouse.grpc.AnimalPart DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:via.pro3.slaughterhouse.AnimalPartProto)
+  private static final com.slaughterhouse.grpc.AnimalPartProto DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.slaughterhouse.grpc.AnimalPart();
+    DEFAULT_INSTANCE = new com.slaughterhouse.grpc.AnimalPartProto();
   }
 
-  public static com.slaughterhouse.grpc.AnimalPart getDefaultInstance() {
+  public static com.slaughterhouse.grpc.AnimalPartProto getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<AnimalPart>
-      PARSER = new com.google.protobuf.AbstractParser<AnimalPart>() {
+  private static final com.google.protobuf.Parser<AnimalPartProto>
+      PARSER = new com.google.protobuf.AbstractParser<AnimalPartProto>() {
     @java.lang.Override
-    public AnimalPart parsePartialFrom(
+    public AnimalPartProto parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new AnimalPart(input, extensionRegistry);
+      return new AnimalPartProto(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<AnimalPart> parser() {
+  public static com.google.protobuf.Parser<AnimalPartProto> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<AnimalPart> getParserForType() {
+  public com.google.protobuf.Parser<AnimalPartProto> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.slaughterhouse.grpc.AnimalPart getDefaultInstanceForType() {
+  public com.slaughterhouse.grpc.AnimalPartProto getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

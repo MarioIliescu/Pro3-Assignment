@@ -11,33 +11,34 @@ import "google/protobuf/empty.proto";
 
 // --- Entities ---
 
-message Animal {
-  int64 id = 1;
+message AnimalProto {
+  int32 id = 1;
   string registration_number = 2;
   double weight = 3;
   google.protobuf.Timestamp arrival_time = 4;
+  string origin = 5;
 }
 
-message AnimalPart {
+message AnimalPartProto {
   int32 id = 1;
   int32 animal_id = 2;
   string part_type = 3;
   double weight = 4;
 }
 
-message Tray {
+message TrayProto {
   int32 id = 1;
   string part_type = 2;
   double max_weight = 3;
 }
 
-message Product {
+message ProductProto {
   int32 id = 1;
   string name = 2;
   string description = 3;
 }
 
-message ProductToPart {
+message ProductToPartProto {
   int32 id = 1;
   int32 product_id = 2;
   int32 part_id = 3;
@@ -66,93 +67,93 @@ message DeleteResponse {
 // --- CRUD ---
 
 message CreateAnimalRequest {
-  Animal animal = 1;
+  AnimalProto animal = 1;
 }
 message CreateAnimalResponse {
-  Animal animal = 1;
+  AnimalProto animal = 1;
   Error error = 2;
 }
 message ListAnimalsResponse {
-  repeated Animal animals = 1;
+  repeated AnimalProto animals = 1;
 }
 
 message CreateAnimalPartRequest {
-  AnimalPart part = 1;
+  AnimalPartProto part = 1;
 }
 message CreateAnimalPartResponse {
-  AnimalPart part = 1;
+  AnimalPartProto part = 1;
   Error error = 2;
 }
 message ListAnimalPartsResponse {
-  repeated AnimalPart parts = 1;
+  repeated AnimalPartProto parts = 1;
 }
 
 message CreateTrayRequest {
-  Tray tray = 1;
+  TrayProto tray = 1;
 }
 message CreateTrayResponse {
-  Tray tray = 1;
+  TrayProto tray = 1;
   Error error = 2;
 }
 message ListTraysResponse {
-  repeated Tray trays = 1;
+  repeated TrayProto trays = 1;
 }
 
 message CreateProductRequest {
-  Product product = 1;
+  ProductProto product = 1;
 }
 message CreateProductResponse {
-  Product product = 1;
+  ProductProto product = 1;
   Error error = 2;
 }
 message ListProductsResponse {
-  repeated Product products = 1;
+  repeated ProductProto products = 1;
 }
 
 message CreateProductToPartRequest {
-  ProductToPart mapping = 1;
+  ProductToPartProto mapping = 1;
 }
 message CreateProductToPartResponse {
-  ProductToPart mapping = 1;
+  ProductToPartProto mapping = 1;
   Error error = 2;
 }
 message ListProductToPartResponse {
-  repeated ProductToPart mappings = 1;
+  repeated ProductToPartProto mappings = 1;
 }
 
 // --- Services ---
 
 service AnimalService {
   rpc CreateAnimal(CreateAnimalRequest) returns (CreateAnimalResponse);
-  rpc GetAnimal(GetByIdRequest) returns (Animal);
+  rpc GetAnimal(GetByIdRequest) returns (AnimalProto);
   rpc DeleteAnimal(DeleteByIdRequest) returns (DeleteResponse);
   rpc ListAnimals(google.protobuf.Empty) returns (ListAnimalsResponse);
 }
 
 service AnimalPartService {
   rpc CreateAnimalPart(CreateAnimalPartRequest) returns (CreateAnimalPartResponse);
-  rpc GetAnimalPart(GetByIdRequest) returns (AnimalPart);
+  rpc GetAnimalPart(GetByIdRequest) returns (AnimalPartProto);
   rpc DeleteAnimalPart(DeleteByIdRequest) returns (DeleteResponse);
   rpc ListAnimalParts(google.protobuf.Empty) returns (ListAnimalPartsResponse);
 }
 
 service TrayService {
   rpc CreateTray(CreateTrayRequest) returns (CreateTrayResponse);
-  rpc GetTray(GetByIdRequest) returns (Tray);
+  rpc GetTray(GetByIdRequest) returns (TrayProto);
   rpc DeleteTray(DeleteByIdRequest) returns (DeleteResponse);
   rpc ListTrays(google.protobuf.Empty) returns (ListTraysResponse);
 }
 
 service ProductService {
   rpc CreateProduct(CreateProductRequest) returns (CreateProductResponse);
-  rpc GetProduct(GetByIdRequest) returns (Product);
+  rpc GetProduct(GetByIdRequest) returns (ProductProto);
   rpc DeleteProduct(DeleteByIdRequest) returns (DeleteResponse);
   rpc ListProducts(google.protobuf.Empty) returns (ListProductsResponse);
 }
 
 service ProductToPartService {
   rpc CreateProductToPart(CreateProductToPartRequest) returns (CreateProductToPartResponse);
-  rpc GetProductToPart(GetByIdRequest) returns (ProductToPart);
+  rpc GetProductToPart(GetByIdRequest) returns (ProductToPartProto);
   rpc DeleteProductToPart(DeleteByIdRequest) returns (DeleteResponse);
   rpc ListProductToPart(google.protobuf.Empty) returns (ListProductToPartResponse);
 }

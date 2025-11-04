@@ -8,17 +8,17 @@ public interface CreateTrayRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+   * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
    * @return Whether the tray field is set.
    */
   boolean hasTray();
   /**
-   * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+   * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
    * @return The tray.
    */
-  com.slaughterhouse.grpc.Tray getTray();
+  com.slaughterhouse.grpc.TrayProto getTray();
   /**
-   * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+   * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
    */
-  com.slaughterhouse.grpc.TrayOrBuilder getTrayOrBuilder();
+  com.slaughterhouse.grpc.TrayProtoOrBuilder getTrayOrBuilder();
 }

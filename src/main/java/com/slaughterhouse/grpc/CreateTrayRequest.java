@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            com.slaughterhouse.grpc.Tray.Builder subBuilder = null;
+            com.slaughterhouse.grpc.TrayProto.Builder subBuilder = null;
             if (tray_ != null) {
               subBuilder = tray_.toBuilder();
             }
-            tray_ = input.readMessage(com.slaughterhouse.grpc.Tray.parser(), extensionRegistry);
+            tray_ = input.readMessage(com.slaughterhouse.grpc.TrayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(tray_);
               tray_ = subBuilder.buildPartial();
@@ -96,9 +96,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TRAY_FIELD_NUMBER = 1;
-  private com.slaughterhouse.grpc.Tray tray_;
+  private com.slaughterhouse.grpc.TrayProto tray_;
   /**
-   * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+   * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
    * @return Whether the tray field is set.
    */
   @java.lang.Override
@@ -106,18 +106,18 @@ private static final long serialVersionUID = 0L;
     return tray_ != null;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+   * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
    * @return The tray.
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.Tray getTray() {
-    return tray_ == null ? com.slaughterhouse.grpc.Tray.getDefaultInstance() : tray_;
+  public com.slaughterhouse.grpc.TrayProto getTray() {
+    return tray_ == null ? com.slaughterhouse.grpc.TrayProto.getDefaultInstance() : tray_;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+   * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.TrayOrBuilder getTrayOrBuilder() {
+  public com.slaughterhouse.grpc.TrayProtoOrBuilder getTrayOrBuilder() {
     return getTray();
   }
 
@@ -436,31 +436,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.slaughterhouse.grpc.Tray tray_;
+    private com.slaughterhouse.grpc.TrayProto tray_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.Tray, com.slaughterhouse.grpc.Tray.Builder, com.slaughterhouse.grpc.TrayOrBuilder> trayBuilder_;
+        com.slaughterhouse.grpc.TrayProto, com.slaughterhouse.grpc.TrayProto.Builder, com.slaughterhouse.grpc.TrayProtoOrBuilder> trayBuilder_;
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      * @return Whether the tray field is set.
      */
     public boolean hasTray() {
       return trayBuilder_ != null || tray_ != null;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      * @return The tray.
      */
-    public com.slaughterhouse.grpc.Tray getTray() {
+    public com.slaughterhouse.grpc.TrayProto getTray() {
       if (trayBuilder_ == null) {
-        return tray_ == null ? com.slaughterhouse.grpc.Tray.getDefaultInstance() : tray_;
+        return tray_ == null ? com.slaughterhouse.grpc.TrayProto.getDefaultInstance() : tray_;
       } else {
         return trayBuilder_.getMessage();
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
-    public Builder setTray(com.slaughterhouse.grpc.Tray value) {
+    public Builder setTray(com.slaughterhouse.grpc.TrayProto value) {
       if (trayBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -474,10 +474,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
     public Builder setTray(
-        com.slaughterhouse.grpc.Tray.Builder builderForValue) {
+        com.slaughterhouse.grpc.TrayProto.Builder builderForValue) {
       if (trayBuilder_ == null) {
         tray_ = builderForValue.build();
         onChanged();
@@ -488,13 +488,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
-    public Builder mergeTray(com.slaughterhouse.grpc.Tray value) {
+    public Builder mergeTray(com.slaughterhouse.grpc.TrayProto value) {
       if (trayBuilder_ == null) {
         if (tray_ != null) {
           tray_ =
-            com.slaughterhouse.grpc.Tray.newBuilder(tray_).mergeFrom(value).buildPartial();
+            com.slaughterhouse.grpc.TrayProto.newBuilder(tray_).mergeFrom(value).buildPartial();
         } else {
           tray_ = value;
         }
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
     public Builder clearTray() {
       if (trayBuilder_ == null) {
@@ -520,33 +520,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
-    public com.slaughterhouse.grpc.Tray.Builder getTrayBuilder() {
+    public com.slaughterhouse.grpc.TrayProto.Builder getTrayBuilder() {
       
       onChanged();
       return getTrayFieldBuilder().getBuilder();
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
-    public com.slaughterhouse.grpc.TrayOrBuilder getTrayOrBuilder() {
+    public com.slaughterhouse.grpc.TrayProtoOrBuilder getTrayOrBuilder() {
       if (trayBuilder_ != null) {
         return trayBuilder_.getMessageOrBuilder();
       } else {
         return tray_ == null ?
-            com.slaughterhouse.grpc.Tray.getDefaultInstance() : tray_;
+            com.slaughterhouse.grpc.TrayProto.getDefaultInstance() : tray_;
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Tray tray = 1;</code>
+     * <code>.via.pro3.slaughterhouse.TrayProto tray = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.Tray, com.slaughterhouse.grpc.Tray.Builder, com.slaughterhouse.grpc.TrayOrBuilder> 
+        com.slaughterhouse.grpc.TrayProto, com.slaughterhouse.grpc.TrayProto.Builder, com.slaughterhouse.grpc.TrayProtoOrBuilder> 
         getTrayFieldBuilder() {
       if (trayBuilder_ == null) {
         trayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.slaughterhouse.grpc.Tray, com.slaughterhouse.grpc.Tray.Builder, com.slaughterhouse.grpc.TrayOrBuilder>(
+            com.slaughterhouse.grpc.TrayProto, com.slaughterhouse.grpc.TrayProto.Builder, com.slaughterhouse.grpc.TrayProtoOrBuilder>(
                 getTray(),
                 getParentForChildren(),
                 isClean());

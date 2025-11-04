@@ -3,8 +3,8 @@
 
 package com.slaughterhouse.grpc;
 
-public interface ProductToPartOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:via.pro3.slaughterhouse.ProductToPart)
+public interface ProductToPartProtoOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:via.pro3.slaughterhouse.ProductToPartProto)
     com.google.protobuf.MessageOrBuilder {
 
   /**

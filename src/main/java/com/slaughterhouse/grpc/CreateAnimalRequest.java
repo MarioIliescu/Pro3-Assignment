@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            com.slaughterhouse.grpc.Animal.Builder subBuilder = null;
+            com.slaughterhouse.grpc.AnimalProto.Builder subBuilder = null;
             if (animal_ != null) {
               subBuilder = animal_.toBuilder();
             }
-            animal_ = input.readMessage(com.slaughterhouse.grpc.Animal.parser(), extensionRegistry);
+            animal_ = input.readMessage(com.slaughterhouse.grpc.AnimalProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(animal_);
               animal_ = subBuilder.buildPartial();
@@ -96,9 +96,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ANIMAL_FIELD_NUMBER = 1;
-  private com.slaughterhouse.grpc.Animal animal_;
+  private com.slaughterhouse.grpc.AnimalProto animal_;
   /**
-   * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
    * @return Whether the animal field is set.
    */
   @java.lang.Override
@@ -106,18 +106,18 @@ private static final long serialVersionUID = 0L;
     return animal_ != null;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
    * @return The animal.
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.Animal getAnimal() {
-    return animal_ == null ? com.slaughterhouse.grpc.Animal.getDefaultInstance() : animal_;
+  public com.slaughterhouse.grpc.AnimalProto getAnimal() {
+    return animal_ == null ? com.slaughterhouse.grpc.AnimalProto.getDefaultInstance() : animal_;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.AnimalOrBuilder getAnimalOrBuilder() {
+  public com.slaughterhouse.grpc.AnimalProtoOrBuilder getAnimalOrBuilder() {
     return getAnimal();
   }
 
@@ -436,31 +436,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.slaughterhouse.grpc.Animal animal_;
+    private com.slaughterhouse.grpc.AnimalProto animal_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.Animal, com.slaughterhouse.grpc.Animal.Builder, com.slaughterhouse.grpc.AnimalOrBuilder> animalBuilder_;
+        com.slaughterhouse.grpc.AnimalProto, com.slaughterhouse.grpc.AnimalProto.Builder, com.slaughterhouse.grpc.AnimalProtoOrBuilder> animalBuilder_;
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      * @return Whether the animal field is set.
      */
     public boolean hasAnimal() {
       return animalBuilder_ != null || animal_ != null;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      * @return The animal.
      */
-    public com.slaughterhouse.grpc.Animal getAnimal() {
+    public com.slaughterhouse.grpc.AnimalProto getAnimal() {
       if (animalBuilder_ == null) {
-        return animal_ == null ? com.slaughterhouse.grpc.Animal.getDefaultInstance() : animal_;
+        return animal_ == null ? com.slaughterhouse.grpc.AnimalProto.getDefaultInstance() : animal_;
       } else {
         return animalBuilder_.getMessage();
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
-    public Builder setAnimal(com.slaughterhouse.grpc.Animal value) {
+    public Builder setAnimal(com.slaughterhouse.grpc.AnimalProto value) {
       if (animalBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -474,10 +474,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
     public Builder setAnimal(
-        com.slaughterhouse.grpc.Animal.Builder builderForValue) {
+        com.slaughterhouse.grpc.AnimalProto.Builder builderForValue) {
       if (animalBuilder_ == null) {
         animal_ = builderForValue.build();
         onChanged();
@@ -488,13 +488,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
-    public Builder mergeAnimal(com.slaughterhouse.grpc.Animal value) {
+    public Builder mergeAnimal(com.slaughterhouse.grpc.AnimalProto value) {
       if (animalBuilder_ == null) {
         if (animal_ != null) {
           animal_ =
-            com.slaughterhouse.grpc.Animal.newBuilder(animal_).mergeFrom(value).buildPartial();
+            com.slaughterhouse.grpc.AnimalProto.newBuilder(animal_).mergeFrom(value).buildPartial();
         } else {
           animal_ = value;
         }
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
     public Builder clearAnimal() {
       if (animalBuilder_ == null) {
@@ -520,33 +520,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
-    public com.slaughterhouse.grpc.Animal.Builder getAnimalBuilder() {
+    public com.slaughterhouse.grpc.AnimalProto.Builder getAnimalBuilder() {
       
       onChanged();
       return getAnimalFieldBuilder().getBuilder();
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalOrBuilder getAnimalOrBuilder() {
+    public com.slaughterhouse.grpc.AnimalProtoOrBuilder getAnimalOrBuilder() {
       if (animalBuilder_ != null) {
         return animalBuilder_.getMessageOrBuilder();
       } else {
         return animal_ == null ?
-            com.slaughterhouse.grpc.Animal.getDefaultInstance() : animal_;
+            com.slaughterhouse.grpc.AnimalProto.getDefaultInstance() : animal_;
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.Animal, com.slaughterhouse.grpc.Animal.Builder, com.slaughterhouse.grpc.AnimalOrBuilder> 
+        com.slaughterhouse.grpc.AnimalProto, com.slaughterhouse.grpc.AnimalProto.Builder, com.slaughterhouse.grpc.AnimalProtoOrBuilder> 
         getAnimalFieldBuilder() {
       if (animalBuilder_ == null) {
         animalBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.slaughterhouse.grpc.Animal, com.slaughterhouse.grpc.Animal.Builder, com.slaughterhouse.grpc.AnimalOrBuilder>(
+            com.slaughterhouse.grpc.AnimalProto, com.slaughterhouse.grpc.AnimalProto.Builder, com.slaughterhouse.grpc.AnimalProtoOrBuilder>(
                 getAnimal(),
                 getParentForChildren(),
                 isClean());

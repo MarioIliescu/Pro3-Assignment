@@ -8,26 +8,26 @@ public interface ListAnimalsResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Animal animals = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalProto animals = 1;</code>
    */
-  java.util.List<com.slaughterhouse.grpc.Animal> 
+  java.util.List<com.slaughterhouse.grpc.AnimalProto> 
       getAnimalsList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Animal animals = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalProto animals = 1;</code>
    */
-  com.slaughterhouse.grpc.Animal getAnimals(int index);
+  com.slaughterhouse.grpc.AnimalProto getAnimals(int index);
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Animal animals = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalProto animals = 1;</code>
    */
   int getAnimalsCount();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Animal animals = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalProto animals = 1;</code>
    */
-  java.util.List<? extends com.slaughterhouse.grpc.AnimalOrBuilder> 
+  java.util.List<? extends com.slaughterhouse.grpc.AnimalProtoOrBuilder> 
       getAnimalsOrBuilderList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Animal animals = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.AnimalProto animals = 1;</code>
    */
-  com.slaughterhouse.grpc.AnimalOrBuilder getAnimalsOrBuilder(
+  com.slaughterhouse.grpc.AnimalProtoOrBuilder getAnimalsOrBuilder(
       int index);
 }

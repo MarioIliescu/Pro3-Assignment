@@ -39,7 +39,7 @@ class TrayServiceTest {
         tray.setPart_type("Leg");
 
         CreateTrayRequest request = CreateTrayRequest.newBuilder()
-                .setTray(com.slaughterhouse.grpc.Tray.newBuilder()
+                .setTray(com.slaughterhouse.grpc.TrayProto.newBuilder()
                         .setMaxWeight(25.5)
                         .setPartType("Leg")
                         .build())
@@ -100,7 +100,7 @@ class TrayServiceTest {
 
         when(trayRepository.findById(5)).thenReturn(Optional.of(tray));
 
-        com.slaughterhouse.grpc.Tray result = trayService.getTray(5);
+        com.slaughterhouse.grpc.TrayProto result = trayService.getTray(5);
 
         assertNotNull(result);
         assertEquals(5, result.getId());
@@ -111,7 +111,7 @@ class TrayServiceTest {
     void getTray_ReturnsNullIfNotFound() {
         when(trayRepository.findById(100)).thenReturn(Optional.empty());
 
-        com.slaughterhouse.grpc.Tray result = trayService.getTray(100);
+        com.slaughterhouse.grpc.TrayProto result = trayService.getTray(100);
 
         assertNull(result);
     }

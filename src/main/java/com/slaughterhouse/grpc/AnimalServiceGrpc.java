@@ -47,28 +47,28 @@ public final class AnimalServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.Animal> getGetAnimalMethod;
+      com.slaughterhouse.grpc.AnimalProto> getGetAnimalMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetAnimal",
       requestType = com.slaughterhouse.grpc.GetByIdRequest.class,
-      responseType = com.slaughterhouse.grpc.Animal.class,
+      responseType = com.slaughterhouse.grpc.AnimalProto.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.Animal> getGetAnimalMethod() {
-    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.Animal> getGetAnimalMethod;
+      com.slaughterhouse.grpc.AnimalProto> getGetAnimalMethod() {
+    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.AnimalProto> getGetAnimalMethod;
     if ((getGetAnimalMethod = AnimalServiceGrpc.getGetAnimalMethod) == null) {
       synchronized (AnimalServiceGrpc.class) {
         if ((getGetAnimalMethod = AnimalServiceGrpc.getGetAnimalMethod) == null) {
           AnimalServiceGrpc.getGetAnimalMethod = getGetAnimalMethod =
-              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.Animal>newBuilder()
+              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.AnimalProto>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetAnimal"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.slaughterhouse.grpc.GetByIdRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.slaughterhouse.grpc.Animal.getDefaultInstance()))
+                  com.slaughterhouse.grpc.AnimalProto.getDefaultInstance()))
               .setSchemaDescriptor(new AnimalServiceMethodDescriptorSupplier("GetAnimal"))
               .build();
         }
@@ -197,7 +197,7 @@ public final class AnimalServiceGrpc {
     /**
      */
     default void getAnimal(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Animal> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalProto> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAnimalMethod(), responseObserver);
     }
 
@@ -254,7 +254,7 @@ public final class AnimalServiceGrpc {
     /**
      */
     public void getAnimal(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Animal> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalProto> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAnimalMethod(), getCallOptions()), request, responseObserver);
     }
@@ -301,7 +301,7 @@ public final class AnimalServiceGrpc {
 
     /**
      */
-    public com.slaughterhouse.grpc.Animal getAnimal(com.slaughterhouse.grpc.GetByIdRequest request) {
+    public com.slaughterhouse.grpc.AnimalProto getAnimal(com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAnimalMethod(), getCallOptions(), request);
     }
@@ -347,7 +347,7 @@ public final class AnimalServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.Animal> getAnimal(
+    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.AnimalProto> getAnimal(
         com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAnimalMethod(), getCallOptions()), request);
@@ -398,7 +398,7 @@ public final class AnimalServiceGrpc {
           break;
         case METHODID_GET_ANIMAL:
           serviceImpl.getAnimal((com.slaughterhouse.grpc.GetByIdRequest) request,
-              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Animal>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalProto>) responseObserver);
           break;
         case METHODID_DELETE_ANIMAL:
           serviceImpl.deleteAnimal((com.slaughterhouse.grpc.DeleteByIdRequest) request,
@@ -438,7 +438,7 @@ public final class AnimalServiceGrpc {
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
               com.slaughterhouse.grpc.GetByIdRequest,
-              com.slaughterhouse.grpc.Animal>(
+              com.slaughterhouse.grpc.AnimalProto>(
                 service, METHODID_GET_ANIMAL)))
         .addMethod(
           getDeleteAnimalMethod(),

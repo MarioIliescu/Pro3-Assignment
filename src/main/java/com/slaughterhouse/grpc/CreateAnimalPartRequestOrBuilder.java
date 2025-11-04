@@ -8,17 +8,17 @@ public interface CreateAnimalPartRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
    * @return Whether the part field is set.
    */
   boolean hasPart();
   /**
-   * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
    * @return The part.
    */
-  com.slaughterhouse.grpc.AnimalPart getPart();
+  com.slaughterhouse.grpc.AnimalPartProto getPart();
   /**
-   * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
    */
-  com.slaughterhouse.grpc.AnimalPartOrBuilder getPartOrBuilder();
+  com.slaughterhouse.grpc.AnimalPartProtoOrBuilder getPartOrBuilder();
 }

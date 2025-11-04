@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            com.slaughterhouse.grpc.ProductToPart.Builder subBuilder = null;
+            com.slaughterhouse.grpc.ProductToPartProto.Builder subBuilder = null;
             if (mapping_ != null) {
               subBuilder = mapping_.toBuilder();
             }
-            mapping_ = input.readMessage(com.slaughterhouse.grpc.ProductToPart.parser(), extensionRegistry);
+            mapping_ = input.readMessage(com.slaughterhouse.grpc.ProductToPartProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(mapping_);
               mapping_ = subBuilder.buildPartial();
@@ -109,9 +109,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MAPPING_FIELD_NUMBER = 1;
-  private com.slaughterhouse.grpc.ProductToPart mapping_;
+  private com.slaughterhouse.grpc.ProductToPartProto mapping_;
   /**
-   * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
    * @return Whether the mapping field is set.
    */
   @java.lang.Override
@@ -119,18 +119,18 @@ private static final long serialVersionUID = 0L;
     return mapping_ != null;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
    * @return The mapping.
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.ProductToPart getMapping() {
-    return mapping_ == null ? com.slaughterhouse.grpc.ProductToPart.getDefaultInstance() : mapping_;
+  public com.slaughterhouse.grpc.ProductToPartProto getMapping() {
+    return mapping_ == null ? com.slaughterhouse.grpc.ProductToPartProto.getDefaultInstance() : mapping_;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.ProductToPartOrBuilder getMappingOrBuilder() {
+  public com.slaughterhouse.grpc.ProductToPartProtoOrBuilder getMappingOrBuilder() {
     return getMapping();
   }
 
@@ -505,31 +505,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.slaughterhouse.grpc.ProductToPart mapping_;
+    private com.slaughterhouse.grpc.ProductToPartProto mapping_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.ProductToPart, com.slaughterhouse.grpc.ProductToPart.Builder, com.slaughterhouse.grpc.ProductToPartOrBuilder> mappingBuilder_;
+        com.slaughterhouse.grpc.ProductToPartProto, com.slaughterhouse.grpc.ProductToPartProto.Builder, com.slaughterhouse.grpc.ProductToPartProtoOrBuilder> mappingBuilder_;
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      * @return Whether the mapping field is set.
      */
     public boolean hasMapping() {
       return mappingBuilder_ != null || mapping_ != null;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      * @return The mapping.
      */
-    public com.slaughterhouse.grpc.ProductToPart getMapping() {
+    public com.slaughterhouse.grpc.ProductToPartProto getMapping() {
       if (mappingBuilder_ == null) {
-        return mapping_ == null ? com.slaughterhouse.grpc.ProductToPart.getDefaultInstance() : mapping_;
+        return mapping_ == null ? com.slaughterhouse.grpc.ProductToPartProto.getDefaultInstance() : mapping_;
       } else {
         return mappingBuilder_.getMessage();
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
-    public Builder setMapping(com.slaughterhouse.grpc.ProductToPart value) {
+    public Builder setMapping(com.slaughterhouse.grpc.ProductToPartProto value) {
       if (mappingBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -543,10 +543,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
     public Builder setMapping(
-        com.slaughterhouse.grpc.ProductToPart.Builder builderForValue) {
+        com.slaughterhouse.grpc.ProductToPartProto.Builder builderForValue) {
       if (mappingBuilder_ == null) {
         mapping_ = builderForValue.build();
         onChanged();
@@ -557,13 +557,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
-    public Builder mergeMapping(com.slaughterhouse.grpc.ProductToPart value) {
+    public Builder mergeMapping(com.slaughterhouse.grpc.ProductToPartProto value) {
       if (mappingBuilder_ == null) {
         if (mapping_ != null) {
           mapping_ =
-            com.slaughterhouse.grpc.ProductToPart.newBuilder(mapping_).mergeFrom(value).buildPartial();
+            com.slaughterhouse.grpc.ProductToPartProto.newBuilder(mapping_).mergeFrom(value).buildPartial();
         } else {
           mapping_ = value;
         }
@@ -575,7 +575,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
     public Builder clearMapping() {
       if (mappingBuilder_ == null) {
@@ -589,33 +589,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
-    public com.slaughterhouse.grpc.ProductToPart.Builder getMappingBuilder() {
+    public com.slaughterhouse.grpc.ProductToPartProto.Builder getMappingBuilder() {
       
       onChanged();
       return getMappingFieldBuilder().getBuilder();
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
-    public com.slaughterhouse.grpc.ProductToPartOrBuilder getMappingOrBuilder() {
+    public com.slaughterhouse.grpc.ProductToPartProtoOrBuilder getMappingOrBuilder() {
       if (mappingBuilder_ != null) {
         return mappingBuilder_.getMessageOrBuilder();
       } else {
         return mapping_ == null ?
-            com.slaughterhouse.grpc.ProductToPart.getDefaultInstance() : mapping_;
+            com.slaughterhouse.grpc.ProductToPartProto.getDefaultInstance() : mapping_;
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.ProductToPart, com.slaughterhouse.grpc.ProductToPart.Builder, com.slaughterhouse.grpc.ProductToPartOrBuilder> 
+        com.slaughterhouse.grpc.ProductToPartProto, com.slaughterhouse.grpc.ProductToPartProto.Builder, com.slaughterhouse.grpc.ProductToPartProtoOrBuilder> 
         getMappingFieldBuilder() {
       if (mappingBuilder_ == null) {
         mappingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.slaughterhouse.grpc.ProductToPart, com.slaughterhouse.grpc.ProductToPart.Builder, com.slaughterhouse.grpc.ProductToPartOrBuilder>(
+            com.slaughterhouse.grpc.ProductToPartProto, com.slaughterhouse.grpc.ProductToPartProto.Builder, com.slaughterhouse.grpc.ProductToPartProtoOrBuilder>(
                 getMapping(),
                 getParentForChildren(),
                 isClean());

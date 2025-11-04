@@ -3,15 +3,15 @@
 
 package com.slaughterhouse.grpc;
 
-public interface AnimalOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:via.pro3.slaughterhouse.Animal)
+public interface AnimalProtoOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:via.pro3.slaughterhouse.AnimalProto)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 id = 1;</code>
+   * <code>int32 id = 1;</code>
    * @return The id.
    */
-  long getId();
+  int getId();
 
   /**
    * <code>string registration_number = 2;</code>
@@ -45,4 +45,16 @@ public interface AnimalOrBuilder extends
    * <code>.google.protobuf.Timestamp arrival_time = 4;</code>
    */
   com.google.protobuf.TimestampOrBuilder getArrivalTimeOrBuilder();
+
+  /**
+   * <code>string origin = 5;</code>
+   * @return The origin.
+   */
+  java.lang.String getOrigin();
+  /**
+   * <code>string origin = 5;</code>
+   * @return The bytes for origin.
+   */
+  com.google.protobuf.ByteString
+      getOriginBytes();
 }

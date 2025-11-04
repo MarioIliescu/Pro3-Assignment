@@ -38,7 +38,7 @@ class ProductServiceTest {
         entity.setDescription("Premium beef cut");
 
         CreateProductRequest request = CreateProductRequest.newBuilder()
-                .setProduct(com.slaughterhouse.grpc.Product.newBuilder()
+                .setProduct(com.slaughterhouse.grpc.ProductProto.newBuilder()
                         .setId(1)
                         .setName("Beef Pack")
                         .setDescription("Premium beef cut")
@@ -66,7 +66,7 @@ class ProductServiceTest {
 
         when(productRepository.findById(2)).thenReturn(Optional.of(entity));
 
-        com.slaughterhouse.grpc.Product result = productService.getProduct(2);
+        com.slaughterhouse.grpc.ProductProto result = productService.getProduct(2);
 
         assertNotNull(result);
         assertEquals(2, result.getId());
@@ -78,7 +78,7 @@ class ProductServiceTest {
     void getProduct_ReturnsNullIfNotFound() {
         when(productRepository.findById(100)).thenReturn(Optional.empty());
 
-        com.slaughterhouse.grpc.Product result = productService.getProduct(100);
+        com.slaughterhouse.grpc.ProductProto result = productService.getProduct(100);
 
         assertNull(result);
     }

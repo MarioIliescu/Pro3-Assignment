@@ -2,14 +2,16 @@ package via.pro3.slaughterhouse.services;
 
 import com.slaughterhouse.grpc.CreateAnimalPartRequest;
 import com.slaughterhouse.grpc.CreateAnimalPartResponse;
+import org.lognet.springboot.grpc.GRpcService;
+import org.springframework.stereotype.Service;
 import via.pro3.slaughterhouse.repositories.AnimalPartRepository;
 
 import com.slaughterhouse.grpc.*;
-import com.slaughterhouse.grpc.AnimalPart;
+import via.pro3.slaughterhouse.model.AnimalPart;
 import java.util.List;
 import java.util.stream.Collectors;
-
-public class AnimalPartService
+@GRpcService
+@Service public class AnimalPartService extends AnimalPartServiceGrpc.AnimalPartServiceImplBase
 {
   private final AnimalPartRepository partRepository;
 
@@ -21,8 +23,7 @@ public class AnimalPartService
   public CreateAnimalPartResponse create(CreateAnimalPartRequest request)
   {
 
-    via.pro3.slaughterhouse.model.AnimalPart animalPart =
-        new via.pro3.slaughterhouse.model.AnimalPart();
+    AnimalPart animalPart = new via.pro3.slaughterhouse.model.AnimalPart();
     animalPart.setId(request.getPart().getAnimalId());
     animalPart.setAnimalId(request.getPart().getAnimalId());
     animalPart.setPartType(request.getPart().getPartType());
@@ -30,70 +31,63 @@ public class AnimalPartService
 
     partRepository.save(animalPart);
 
-    AnimalPart protoAnimalPart = AnimalPart.newBuilder()
-        .setId(animalPart.getId())
-        .setAnimalId(animalPart.getAnimalId())
-        .setPartType(animalPart.getPartType())
-        .setWeight(animalPart.getWeight())
+    AnimalPartProto protoAnimalPart = AnimalPartProto.newBuilder()
+        .setId(animalPart.getId()).setAnimalId(animalPart.getAnimalId())
+        .setPartType(animalPart.getPartType()).setWeight(animalPart.getWeight())
         .build();
     return CreateAnimalPartResponse.newBuilder().setPart(protoAnimalPart).build();
   }
 
-  public via.pro3.slaughterhouse.model.AnimalPart createAnimalPart(
-      CreateAnimalPartRequest request) {
-    via.pro3.slaughterhouse.model.AnimalPart animalPart = new via.pro3.slaughterhouse.model.AnimalPart();
-    animalPart.setId( request.getPart().getId());
+  public AnimalPartProto createAnimalPart(CreateAnimalPartRequest request)
+  {
+    AnimalPart animalPart = new AnimalPart();
+    animalPart.setId(request.getPart().getId());
     animalPart.setAnimalId(request.getPart().getAnimalId());
     animalPart.setWeight(request.getPart().getWeight());
     animalPart.setPartType(request.getPart().getPartType());
 
     partRepository.save(animalPart);
 
-    com.slaughterhouse.grpc.AnimalPart protoAnimalPart = com.slaughterhouse.grpc.AnimalPart.newBuilder()
+    AnimalPartProto protoAnimalPart = com.slaughterhouse.grpc.AnimalPartProto.newBuilder()
         .setId(animalPart.getId())  // Long maps to proto int64
         .setPartType(animalPart.getPartType())
-        .setAnimalId(animalPart.getAnimalId())
-        .setWeight(animalPart.getWeight())
+        .setAnimalId(animalPart.getAnimalId()).setWeight(animalPart.getWeight())
         .build();
 
-    return animalPart;
+    return protoAnimalPart;
   }
 
-  public ListAnimalPartsResponse listAnimalParts() {
-    List<AnimalPart> animalParts = partRepository.findAll().stream()
-        .map(animalPart ->AnimalPart.newBuilder()
-            .setId(animalPart.getId())
-            .setAnimalId(animalPart.getAnimalId())
-            .setWeight(animalPart.getWeight())
-            .setPartType(animalPart.getPartType())
-            .build())
+  public ListAnimalPartsResponse listAnimalParts()
+  {
+    List<AnimalPartProto> animalParts = partRepository.findAll().stream().map(
+            animalPart -> AnimalPartProto.newBuilder().setId(animalPart.getId())
+                .setAnimalId(animalPart.getAnimalId())
+                .setWeight(animalPart.getWeight()).setPartType(animalPart.getPartType()).build())
         .collect(Collectors.toList());
 
-    return ListAnimalPartsResponse.newBuilder()
-        .addAllParts(animalParts)
+    return ListAnimalPartsResponse.newBuilder().addAllParts(animalParts)
         .build();
   }
 
-  public AnimalPart getAnimalPart(Integer id) {
-    return partRepository.findById(id)
-        .map(animalPart -> AnimalPart.newBuilder()
-            .setId(animalPart.getId())
+  public AnimalPartProto getAnimalPart(Integer id)
+  {
+    return partRepository.findById(id).map(animalPart -> AnimalPartProto.newBuilder().setId(animalPart.getId())
             .setPartType(animalPart.getPartType())
             .setWeight(animalPart.getWeight())
-            .setAnimalId(animalPart.getAnimalId())
-            .build())
-        .orElse(null);
+            .setAnimalId(animalPart.getAnimalId()).build()).orElse(null);
   }
 
-  public DeleteResponse deleteAnimalPart(Integer id) {
+  public DeleteResponse deleteAnimalPart(Integer id)
+  {
     DeleteResponse.Builder response = DeleteResponse.newBuilder();
-    if (partRepository.existsById(id)) {
+    if (partRepository.existsById(id))
+    {
       partRepository.deleteById(id);
-    } else {
-      response.setError(com.slaughterhouse.grpc.Error.newBuilder()
-          .setCode(404)
-          .setMessage("AnimalPart not found")
-          .build());
+    }
+    else
+    {
+      response.setError(com.slaughterhouse.grpc.Error.newBuilder().setCode(404)
+          .setMessage("AnimalPart not found").build());
     }
     return response.build();
   }

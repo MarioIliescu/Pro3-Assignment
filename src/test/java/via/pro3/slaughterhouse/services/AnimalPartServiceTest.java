@@ -31,7 +31,7 @@ class AnimalPartServiceTest {
     @Test
     void create() {
         CreateAnimalPartRequest request = CreateAnimalPartRequest.newBuilder()
-                .setPart(com.slaughterhouse.grpc.AnimalPart.newBuilder()
+                .setPart(com.slaughterhouse.grpc.AnimalPartProto.newBuilder()
                         .setId(1)
                         .setAnimalId(101)
                         .setWeight(22.5)
@@ -91,7 +91,7 @@ class AnimalPartServiceTest {
 
         when(partRepository.findById(10)).thenReturn(Optional.of(part));
 
-        com.slaughterhouse.grpc.AnimalPart result = animalPartService.getAnimalPart(10);
+        com.slaughterhouse.grpc.AnimalPartProto result = animalPartService.getAnimalPart(10);
 
         assertNotNull(result);
         assertEquals(10, result.getId());
@@ -104,7 +104,7 @@ class AnimalPartServiceTest {
     void getAnimalPart_ReturnsNullIfNotFound() {
         when(partRepository.findById(55)).thenReturn(Optional.empty());
 
-        com.slaughterhouse.grpc.AnimalPart result = animalPartService.getAnimalPart(55);
+        com.slaughterhouse.grpc.AnimalPartProto result = animalPartService.getAnimalPart(55);
 
         assertNull(result);
     }

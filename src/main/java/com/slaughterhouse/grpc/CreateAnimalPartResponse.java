@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            com.slaughterhouse.grpc.AnimalPart.Builder subBuilder = null;
+            com.slaughterhouse.grpc.AnimalPartProto.Builder subBuilder = null;
             if (part_ != null) {
               subBuilder = part_.toBuilder();
             }
-            part_ = input.readMessage(com.slaughterhouse.grpc.AnimalPart.parser(), extensionRegistry);
+            part_ = input.readMessage(com.slaughterhouse.grpc.AnimalPartProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(part_);
               part_ = subBuilder.buildPartial();
@@ -109,9 +109,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PART_FIELD_NUMBER = 1;
-  private com.slaughterhouse.grpc.AnimalPart part_;
+  private com.slaughterhouse.grpc.AnimalPartProto part_;
   /**
-   * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
    * @return Whether the part field is set.
    */
   @java.lang.Override
@@ -119,18 +119,18 @@ private static final long serialVersionUID = 0L;
     return part_ != null;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
    * @return The part.
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.AnimalPart getPart() {
-    return part_ == null ? com.slaughterhouse.grpc.AnimalPart.getDefaultInstance() : part_;
+  public com.slaughterhouse.grpc.AnimalPartProto getPart() {
+    return part_ == null ? com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance() : part_;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.AnimalPartOrBuilder getPartOrBuilder() {
+  public com.slaughterhouse.grpc.AnimalPartProtoOrBuilder getPartOrBuilder() {
     return getPart();
   }
 
@@ -505,31 +505,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.slaughterhouse.grpc.AnimalPart part_;
+    private com.slaughterhouse.grpc.AnimalPartProto part_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.AnimalPart, com.slaughterhouse.grpc.AnimalPart.Builder, com.slaughterhouse.grpc.AnimalPartOrBuilder> partBuilder_;
+        com.slaughterhouse.grpc.AnimalPartProto, com.slaughterhouse.grpc.AnimalPartProto.Builder, com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> partBuilder_;
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      * @return Whether the part field is set.
      */
     public boolean hasPart() {
       return partBuilder_ != null || part_ != null;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      * @return The part.
      */
-    public com.slaughterhouse.grpc.AnimalPart getPart() {
+    public com.slaughterhouse.grpc.AnimalPartProto getPart() {
       if (partBuilder_ == null) {
-        return part_ == null ? com.slaughterhouse.grpc.AnimalPart.getDefaultInstance() : part_;
+        return part_ == null ? com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance() : part_;
       } else {
         return partBuilder_.getMessage();
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
-    public Builder setPart(com.slaughterhouse.grpc.AnimalPart value) {
+    public Builder setPart(com.slaughterhouse.grpc.AnimalPartProto value) {
       if (partBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -543,10 +543,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
     public Builder setPart(
-        com.slaughterhouse.grpc.AnimalPart.Builder builderForValue) {
+        com.slaughterhouse.grpc.AnimalPartProto.Builder builderForValue) {
       if (partBuilder_ == null) {
         part_ = builderForValue.build();
         onChanged();
@@ -557,13 +557,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
-    public Builder mergePart(com.slaughterhouse.grpc.AnimalPart value) {
+    public Builder mergePart(com.slaughterhouse.grpc.AnimalPartProto value) {
       if (partBuilder_ == null) {
         if (part_ != null) {
           part_ =
-            com.slaughterhouse.grpc.AnimalPart.newBuilder(part_).mergeFrom(value).buildPartial();
+            com.slaughterhouse.grpc.AnimalPartProto.newBuilder(part_).mergeFrom(value).buildPartial();
         } else {
           part_ = value;
         }
@@ -575,7 +575,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
     public Builder clearPart() {
       if (partBuilder_ == null) {
@@ -589,33 +589,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPart.Builder getPartBuilder() {
+    public com.slaughterhouse.grpc.AnimalPartProto.Builder getPartBuilder() {
       
       onChanged();
       return getPartFieldBuilder().getBuilder();
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
-    public com.slaughterhouse.grpc.AnimalPartOrBuilder getPartOrBuilder() {
+    public com.slaughterhouse.grpc.AnimalPartProtoOrBuilder getPartOrBuilder() {
       if (partBuilder_ != null) {
         return partBuilder_.getMessageOrBuilder();
       } else {
         return part_ == null ?
-            com.slaughterhouse.grpc.AnimalPart.getDefaultInstance() : part_;
+            com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance() : part_;
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.AnimalPart part = 1;</code>
+     * <code>.via.pro3.slaughterhouse.AnimalPartProto part = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.AnimalPart, com.slaughterhouse.grpc.AnimalPart.Builder, com.slaughterhouse.grpc.AnimalPartOrBuilder> 
+        com.slaughterhouse.grpc.AnimalPartProto, com.slaughterhouse.grpc.AnimalPartProto.Builder, com.slaughterhouse.grpc.AnimalPartProtoOrBuilder> 
         getPartFieldBuilder() {
       if (partBuilder_ == null) {
         partBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.slaughterhouse.grpc.AnimalPart, com.slaughterhouse.grpc.AnimalPart.Builder, com.slaughterhouse.grpc.AnimalPartOrBuilder>(
+            com.slaughterhouse.grpc.AnimalPartProto, com.slaughterhouse.grpc.AnimalPartProto.Builder, com.slaughterhouse.grpc.AnimalPartProtoOrBuilder>(
                 getPart(),
                 getParentForChildren(),
                 isClean());

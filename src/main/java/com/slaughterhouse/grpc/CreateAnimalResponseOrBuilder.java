@@ -8,19 +8,19 @@ public interface CreateAnimalResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
    * @return Whether the animal field is set.
    */
   boolean hasAnimal();
   /**
-   * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
    * @return The animal.
    */
-  com.slaughterhouse.grpc.Animal getAnimal();
+  com.slaughterhouse.grpc.AnimalProto getAnimal();
   /**
-   * <code>.via.pro3.slaughterhouse.Animal animal = 1;</code>
+   * <code>.via.pro3.slaughterhouse.AnimalProto animal = 1;</code>
    */
-  com.slaughterhouse.grpc.AnimalOrBuilder getAnimalOrBuilder();
+  com.slaughterhouse.grpc.AnimalProtoOrBuilder getAnimalOrBuilder();
 
   /**
    * <code>.via.pro3.slaughterhouse.Error error = 2;</code>

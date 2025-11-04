@@ -4,25 +4,25 @@
 package com.slaughterhouse.grpc;
 
 /**
- * Protobuf type {@code via.pro3.slaughterhouse.ProductToPart}
+ * Protobuf type {@code via.pro3.slaughterhouse.ProductToPartProto}
  */
-public final class ProductToPart extends
+public final class ProductToPartProto extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:via.pro3.slaughterhouse.ProductToPart)
-    ProductToPartOrBuilder {
+    // @@protoc_insertion_point(message_implements:via.pro3.slaughterhouse.ProductToPartProto)
+    ProductToPartProtoOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use ProductToPart.newBuilder() to construct.
-  private ProductToPart(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use ProductToPartProto.newBuilder() to construct.
+  private ProductToPartProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private ProductToPart() {
+  private ProductToPartProto() {
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new ProductToPart();
+    return new ProductToPartProto();
   }
 
   @java.lang.Override
@@ -30,7 +30,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private ProductToPart(
+  private ProductToPartProto(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -91,15 +91,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPart_descriptor;
+    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPartProto_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPart_fieldAccessorTable
+    return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPartProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.slaughterhouse.grpc.ProductToPart.class, com.slaughterhouse.grpc.ProductToPart.Builder.class);
+            com.slaughterhouse.grpc.ProductToPartProto.class, com.slaughterhouse.grpc.ProductToPartProto.Builder.class);
   }
 
   public static final int ID_FIELD_NUMBER = 1;
@@ -207,10 +207,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.slaughterhouse.grpc.ProductToPart)) {
+    if (!(obj instanceof com.slaughterhouse.grpc.ProductToPartProto)) {
       return super.equals(obj);
     }
-    com.slaughterhouse.grpc.ProductToPart other = (com.slaughterhouse.grpc.ProductToPart) obj;
+    com.slaughterhouse.grpc.ProductToPartProto other = (com.slaughterhouse.grpc.ProductToPartProto) obj;
 
     if (getId()
         != other.getId()) return false;
@@ -244,69 +244,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(byte[] data)
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(java.io.InputStream input)
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseDelimitedFrom(java.io.InputStream input)
+  public static com.slaughterhouse.grpc.ProductToPartProto parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseDelimitedFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.slaughterhouse.grpc.ProductToPart parseFrom(
+  public static com.slaughterhouse.grpc.ProductToPartProto parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -319,7 +319,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.slaughterhouse.grpc.ProductToPart prototype) {
+  public static Builder newBuilder(com.slaughterhouse.grpc.ProductToPartProto prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -335,26 +335,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code via.pro3.slaughterhouse.ProductToPart}
+   * Protobuf type {@code via.pro3.slaughterhouse.ProductToPartProto}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:via.pro3.slaughterhouse.ProductToPart)
-      com.slaughterhouse.grpc.ProductToPartOrBuilder {
+      // @@protoc_insertion_point(builder_implements:via.pro3.slaughterhouse.ProductToPartProto)
+      com.slaughterhouse.grpc.ProductToPartProtoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPart_descriptor;
+      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPartProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPart_fieldAccessorTable
+      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPartProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.slaughterhouse.grpc.ProductToPart.class, com.slaughterhouse.grpc.ProductToPart.Builder.class);
+              com.slaughterhouse.grpc.ProductToPartProto.class, com.slaughterhouse.grpc.ProductToPartProto.Builder.class);
     }
 
-    // Construct using com.slaughterhouse.grpc.ProductToPart.newBuilder()
+    // Construct using com.slaughterhouse.grpc.ProductToPartProto.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -386,17 +386,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPart_descriptor;
+      return com.slaughterhouse.grpc.SlaughterhouseProto.internal_static_via_pro3_slaughterhouse_ProductToPartProto_descriptor;
     }
 
     @java.lang.Override
-    public com.slaughterhouse.grpc.ProductToPart getDefaultInstanceForType() {
-      return com.slaughterhouse.grpc.ProductToPart.getDefaultInstance();
+    public com.slaughterhouse.grpc.ProductToPartProto getDefaultInstanceForType() {
+      return com.slaughterhouse.grpc.ProductToPartProto.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.slaughterhouse.grpc.ProductToPart build() {
-      com.slaughterhouse.grpc.ProductToPart result = buildPartial();
+    public com.slaughterhouse.grpc.ProductToPartProto build() {
+      com.slaughterhouse.grpc.ProductToPartProto result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -404,8 +404,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.slaughterhouse.grpc.ProductToPart buildPartial() {
-      com.slaughterhouse.grpc.ProductToPart result = new com.slaughterhouse.grpc.ProductToPart(this);
+    public com.slaughterhouse.grpc.ProductToPartProto buildPartial() {
+      com.slaughterhouse.grpc.ProductToPartProto result = new com.slaughterhouse.grpc.ProductToPartProto(this);
       result.id_ = id_;
       result.productId_ = productId_;
       result.partId_ = partId_;
@@ -448,16 +448,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.slaughterhouse.grpc.ProductToPart) {
-        return mergeFrom((com.slaughterhouse.grpc.ProductToPart)other);
+      if (other instanceof com.slaughterhouse.grpc.ProductToPartProto) {
+        return mergeFrom((com.slaughterhouse.grpc.ProductToPartProto)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.slaughterhouse.grpc.ProductToPart other) {
-      if (other == com.slaughterhouse.grpc.ProductToPart.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.slaughterhouse.grpc.ProductToPartProto other) {
+      if (other == com.slaughterhouse.grpc.ProductToPartProto.getDefaultInstance()) return this;
       if (other.getId() != 0) {
         setId(other.getId());
       }
@@ -485,11 +485,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.slaughterhouse.grpc.ProductToPart parsedMessage = null;
+      com.slaughterhouse.grpc.ProductToPartProto parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.slaughterhouse.grpc.ProductToPart) e.getUnfinishedMessage();
+        parsedMessage = (com.slaughterhouse.grpc.ProductToPartProto) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -635,41 +635,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:via.pro3.slaughterhouse.ProductToPart)
+    // @@protoc_insertion_point(builder_scope:via.pro3.slaughterhouse.ProductToPartProto)
   }
 
-  // @@protoc_insertion_point(class_scope:via.pro3.slaughterhouse.ProductToPart)
-  private static final com.slaughterhouse.grpc.ProductToPart DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:via.pro3.slaughterhouse.ProductToPartProto)
+  private static final com.slaughterhouse.grpc.ProductToPartProto DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.slaughterhouse.grpc.ProductToPart();
+    DEFAULT_INSTANCE = new com.slaughterhouse.grpc.ProductToPartProto();
   }
 
-  public static com.slaughterhouse.grpc.ProductToPart getDefaultInstance() {
+  public static com.slaughterhouse.grpc.ProductToPartProto getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<ProductToPart>
-      PARSER = new com.google.protobuf.AbstractParser<ProductToPart>() {
+  private static final com.google.protobuf.Parser<ProductToPartProto>
+      PARSER = new com.google.protobuf.AbstractParser<ProductToPartProto>() {
     @java.lang.Override
-    public ProductToPart parsePartialFrom(
+    public ProductToPartProto parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new ProductToPart(input, extensionRegistry);
+      return new ProductToPartProto(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<ProductToPart> parser() {
+  public static com.google.protobuf.Parser<ProductToPartProto> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<ProductToPart> getParserForType() {
+  public com.google.protobuf.Parser<ProductToPartProto> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.slaughterhouse.grpc.ProductToPart getDefaultInstanceForType() {
+  public com.slaughterhouse.grpc.ProductToPartProto getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

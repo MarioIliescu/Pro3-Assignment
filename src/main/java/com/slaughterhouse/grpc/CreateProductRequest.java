@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            com.slaughterhouse.grpc.Product.Builder subBuilder = null;
+            com.slaughterhouse.grpc.ProductProto.Builder subBuilder = null;
             if (product_ != null) {
               subBuilder = product_.toBuilder();
             }
-            product_ = input.readMessage(com.slaughterhouse.grpc.Product.parser(), extensionRegistry);
+            product_ = input.readMessage(com.slaughterhouse.grpc.ProductProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(product_);
               product_ = subBuilder.buildPartial();
@@ -96,9 +96,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PRODUCT_FIELD_NUMBER = 1;
-  private com.slaughterhouse.grpc.Product product_;
+  private com.slaughterhouse.grpc.ProductProto product_;
   /**
-   * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
    * @return Whether the product field is set.
    */
   @java.lang.Override
@@ -106,18 +106,18 @@ private static final long serialVersionUID = 0L;
     return product_ != null;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
    * @return The product.
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.Product getProduct() {
-    return product_ == null ? com.slaughterhouse.grpc.Product.getDefaultInstance() : product_;
+  public com.slaughterhouse.grpc.ProductProto getProduct() {
+    return product_ == null ? com.slaughterhouse.grpc.ProductProto.getDefaultInstance() : product_;
   }
   /**
-   * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.ProductOrBuilder getProductOrBuilder() {
+  public com.slaughterhouse.grpc.ProductProtoOrBuilder getProductOrBuilder() {
     return getProduct();
   }
 
@@ -436,31 +436,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.slaughterhouse.grpc.Product product_;
+    private com.slaughterhouse.grpc.ProductProto product_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.Product, com.slaughterhouse.grpc.Product.Builder, com.slaughterhouse.grpc.ProductOrBuilder> productBuilder_;
+        com.slaughterhouse.grpc.ProductProto, com.slaughterhouse.grpc.ProductProto.Builder, com.slaughterhouse.grpc.ProductProtoOrBuilder> productBuilder_;
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      * @return Whether the product field is set.
      */
     public boolean hasProduct() {
       return productBuilder_ != null || product_ != null;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      * @return The product.
      */
-    public com.slaughterhouse.grpc.Product getProduct() {
+    public com.slaughterhouse.grpc.ProductProto getProduct() {
       if (productBuilder_ == null) {
-        return product_ == null ? com.slaughterhouse.grpc.Product.getDefaultInstance() : product_;
+        return product_ == null ? com.slaughterhouse.grpc.ProductProto.getDefaultInstance() : product_;
       } else {
         return productBuilder_.getMessage();
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
-    public Builder setProduct(com.slaughterhouse.grpc.Product value) {
+    public Builder setProduct(com.slaughterhouse.grpc.ProductProto value) {
       if (productBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -474,10 +474,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
     public Builder setProduct(
-        com.slaughterhouse.grpc.Product.Builder builderForValue) {
+        com.slaughterhouse.grpc.ProductProto.Builder builderForValue) {
       if (productBuilder_ == null) {
         product_ = builderForValue.build();
         onChanged();
@@ -488,13 +488,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
-    public Builder mergeProduct(com.slaughterhouse.grpc.Product value) {
+    public Builder mergeProduct(com.slaughterhouse.grpc.ProductProto value) {
       if (productBuilder_ == null) {
         if (product_ != null) {
           product_ =
-            com.slaughterhouse.grpc.Product.newBuilder(product_).mergeFrom(value).buildPartial();
+            com.slaughterhouse.grpc.ProductProto.newBuilder(product_).mergeFrom(value).buildPartial();
         } else {
           product_ = value;
         }
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
     public Builder clearProduct() {
       if (productBuilder_ == null) {
@@ -520,33 +520,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
-    public com.slaughterhouse.grpc.Product.Builder getProductBuilder() {
+    public com.slaughterhouse.grpc.ProductProto.Builder getProductBuilder() {
       
       onChanged();
       return getProductFieldBuilder().getBuilder();
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
-    public com.slaughterhouse.grpc.ProductOrBuilder getProductOrBuilder() {
+    public com.slaughterhouse.grpc.ProductProtoOrBuilder getProductOrBuilder() {
       if (productBuilder_ != null) {
         return productBuilder_.getMessageOrBuilder();
       } else {
         return product_ == null ?
-            com.slaughterhouse.grpc.Product.getDefaultInstance() : product_;
+            com.slaughterhouse.grpc.ProductProto.getDefaultInstance() : product_;
       }
     }
     /**
-     * <code>.via.pro3.slaughterhouse.Product product = 1;</code>
+     * <code>.via.pro3.slaughterhouse.ProductProto product = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.slaughterhouse.grpc.Product, com.slaughterhouse.grpc.Product.Builder, com.slaughterhouse.grpc.ProductOrBuilder> 
+        com.slaughterhouse.grpc.ProductProto, com.slaughterhouse.grpc.ProductProto.Builder, com.slaughterhouse.grpc.ProductProtoOrBuilder> 
         getProductFieldBuilder() {
       if (productBuilder_ == null) {
         productBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.slaughterhouse.grpc.Product, com.slaughterhouse.grpc.Product.Builder, com.slaughterhouse.grpc.ProductOrBuilder>(
+            com.slaughterhouse.grpc.ProductProto, com.slaughterhouse.grpc.ProductProto.Builder, com.slaughterhouse.grpc.ProductProtoOrBuilder>(
                 getProduct(),
                 getParentForChildren(),
                 isClean());

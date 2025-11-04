@@ -47,28 +47,28 @@ public final class ProductServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.Product> getGetProductMethod;
+      com.slaughterhouse.grpc.ProductProto> getGetProductMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetProduct",
       requestType = com.slaughterhouse.grpc.GetByIdRequest.class,
-      responseType = com.slaughterhouse.grpc.Product.class,
+      responseType = com.slaughterhouse.grpc.ProductProto.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.Product> getGetProductMethod() {
-    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.Product> getGetProductMethod;
+      com.slaughterhouse.grpc.ProductProto> getGetProductMethod() {
+    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.ProductProto> getGetProductMethod;
     if ((getGetProductMethod = ProductServiceGrpc.getGetProductMethod) == null) {
       synchronized (ProductServiceGrpc.class) {
         if ((getGetProductMethod = ProductServiceGrpc.getGetProductMethod) == null) {
           ProductServiceGrpc.getGetProductMethod = getGetProductMethod =
-              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.Product>newBuilder()
+              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.ProductProto>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetProduct"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.slaughterhouse.grpc.GetByIdRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.slaughterhouse.grpc.Product.getDefaultInstance()))
+                  com.slaughterhouse.grpc.ProductProto.getDefaultInstance()))
               .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("GetProduct"))
               .build();
         }
@@ -197,7 +197,7 @@ public final class ProductServiceGrpc {
     /**
      */
     default void getProduct(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Product> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductProto> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetProductMethod(), responseObserver);
     }
 
@@ -254,7 +254,7 @@ public final class ProductServiceGrpc {
     /**
      */
     public void getProduct(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Product> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductProto> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetProductMethod(), getCallOptions()), request, responseObserver);
     }
@@ -301,7 +301,7 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public com.slaughterhouse.grpc.Product getProduct(com.slaughterhouse.grpc.GetByIdRequest request) {
+    public com.slaughterhouse.grpc.ProductProto getProduct(com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetProductMethod(), getCallOptions(), request);
     }
@@ -347,7 +347,7 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.Product> getProduct(
+    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.ProductProto> getProduct(
         com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetProductMethod(), getCallOptions()), request);
@@ -398,7 +398,7 @@ public final class ProductServiceGrpc {
           break;
         case METHODID_GET_PRODUCT:
           serviceImpl.getProduct((com.slaughterhouse.grpc.GetByIdRequest) request,
-              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Product>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductProto>) responseObserver);
           break;
         case METHODID_DELETE_PRODUCT:
           serviceImpl.deleteProduct((com.slaughterhouse.grpc.DeleteByIdRequest) request,
@@ -438,7 +438,7 @@ public final class ProductServiceGrpc {
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
               com.slaughterhouse.grpc.GetByIdRequest,
-              com.slaughterhouse.grpc.Product>(
+              com.slaughterhouse.grpc.ProductProto>(
                 service, METHODID_GET_PRODUCT)))
         .addMethod(
           getDeleteProductMethod(),

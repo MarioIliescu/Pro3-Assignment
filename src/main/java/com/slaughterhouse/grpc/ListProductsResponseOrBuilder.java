@@ -8,26 +8,26 @@ public interface ListProductsResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
-  java.util.List<com.slaughterhouse.grpc.Product> 
+  java.util.List<com.slaughterhouse.grpc.ProductProto> 
       getProductsList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
-  com.slaughterhouse.grpc.Product getProducts(int index);
+  com.slaughterhouse.grpc.ProductProto getProducts(int index);
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
   int getProductsCount();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
-  java.util.List<? extends com.slaughterhouse.grpc.ProductOrBuilder> 
+  java.util.List<? extends com.slaughterhouse.grpc.ProductProtoOrBuilder> 
       getProductsOrBuilderList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
-  com.slaughterhouse.grpc.ProductOrBuilder getProductsOrBuilder(
+  com.slaughterhouse.grpc.ProductProtoOrBuilder getProductsOrBuilder(
       int index);
 }

@@ -52,11 +52,11 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              products_ = new java.util.ArrayList<com.slaughterhouse.grpc.Product>();
+              products_ = new java.util.ArrayList<com.slaughterhouse.grpc.ProductProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             products_.add(
-                input.readMessage(com.slaughterhouse.grpc.Product.parser(), extensionRegistry));
+                input.readMessage(com.slaughterhouse.grpc.ProductProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -97,41 +97,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PRODUCTS_FIELD_NUMBER = 1;
-  private java.util.List<com.slaughterhouse.grpc.Product> products_;
+  private java.util.List<com.slaughterhouse.grpc.ProductProto> products_;
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<com.slaughterhouse.grpc.Product> getProductsList() {
+  public java.util.List<com.slaughterhouse.grpc.ProductProto> getProductsList() {
     return products_;
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.slaughterhouse.grpc.ProductOrBuilder> 
+  public java.util.List<? extends com.slaughterhouse.grpc.ProductProtoOrBuilder> 
       getProductsOrBuilderList() {
     return products_;
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
   @java.lang.Override
   public int getProductsCount() {
     return products_.size();
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.Product getProducts(int index) {
+  public com.slaughterhouse.grpc.ProductProto getProducts(int index) {
     return products_.get(index);
   }
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
    */
   @java.lang.Override
-  public com.slaughterhouse.grpc.ProductOrBuilder getProductsOrBuilder(
+  public com.slaughterhouse.grpc.ProductProtoOrBuilder getProductsOrBuilder(
       int index) {
     return products_.get(index);
   }
@@ -478,22 +478,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.slaughterhouse.grpc.Product> products_ =
+    private java.util.List<com.slaughterhouse.grpc.ProductProto> products_ =
       java.util.Collections.emptyList();
     private void ensureProductsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        products_ = new java.util.ArrayList<com.slaughterhouse.grpc.Product>(products_);
+        products_ = new java.util.ArrayList<com.slaughterhouse.grpc.ProductProto>(products_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.slaughterhouse.grpc.Product, com.slaughterhouse.grpc.Product.Builder, com.slaughterhouse.grpc.ProductOrBuilder> productsBuilder_;
+        com.slaughterhouse.grpc.ProductProto, com.slaughterhouse.grpc.ProductProto.Builder, com.slaughterhouse.grpc.ProductProtoOrBuilder> productsBuilder_;
 
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public java.util.List<com.slaughterhouse.grpc.Product> getProductsList() {
+    public java.util.List<com.slaughterhouse.grpc.ProductProto> getProductsList() {
       if (productsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(products_);
       } else {
@@ -501,7 +501,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public int getProductsCount() {
       if (productsBuilder_ == null) {
@@ -511,9 +511,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public com.slaughterhouse.grpc.Product getProducts(int index) {
+    public com.slaughterhouse.grpc.ProductProto getProducts(int index) {
       if (productsBuilder_ == null) {
         return products_.get(index);
       } else {
@@ -521,10 +521,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder setProducts(
-        int index, com.slaughterhouse.grpc.Product value) {
+        int index, com.slaughterhouse.grpc.ProductProto value) {
       if (productsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -538,10 +538,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder setProducts(
-        int index, com.slaughterhouse.grpc.Product.Builder builderForValue) {
+        int index, com.slaughterhouse.grpc.ProductProto.Builder builderForValue) {
       if (productsBuilder_ == null) {
         ensureProductsIsMutable();
         products_.set(index, builderForValue.build());
@@ -552,9 +552,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public Builder addProducts(com.slaughterhouse.grpc.Product value) {
+    public Builder addProducts(com.slaughterhouse.grpc.ProductProto value) {
       if (productsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -568,10 +568,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder addProducts(
-        int index, com.slaughterhouse.grpc.Product value) {
+        int index, com.slaughterhouse.grpc.ProductProto value) {
       if (productsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -585,10 +585,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder addProducts(
-        com.slaughterhouse.grpc.Product.Builder builderForValue) {
+        com.slaughterhouse.grpc.ProductProto.Builder builderForValue) {
       if (productsBuilder_ == null) {
         ensureProductsIsMutable();
         products_.add(builderForValue.build());
@@ -599,10 +599,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder addProducts(
-        int index, com.slaughterhouse.grpc.Product.Builder builderForValue) {
+        int index, com.slaughterhouse.grpc.ProductProto.Builder builderForValue) {
       if (productsBuilder_ == null) {
         ensureProductsIsMutable();
         products_.add(index, builderForValue.build());
@@ -613,10 +613,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder addAllProducts(
-        java.lang.Iterable<? extends com.slaughterhouse.grpc.Product> values) {
+        java.lang.Iterable<? extends com.slaughterhouse.grpc.ProductProto> values) {
       if (productsBuilder_ == null) {
         ensureProductsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -628,7 +628,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder clearProducts() {
       if (productsBuilder_ == null) {
@@ -641,7 +641,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
     public Builder removeProducts(int index) {
       if (productsBuilder_ == null) {
@@ -654,16 +654,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public com.slaughterhouse.grpc.Product.Builder getProductsBuilder(
+    public com.slaughterhouse.grpc.ProductProto.Builder getProductsBuilder(
         int index) {
       return getProductsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public com.slaughterhouse.grpc.ProductOrBuilder getProductsOrBuilder(
+    public com.slaughterhouse.grpc.ProductProtoOrBuilder getProductsOrBuilder(
         int index) {
       if (productsBuilder_ == null) {
         return products_.get(index);  } else {
@@ -671,9 +671,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public java.util.List<? extends com.slaughterhouse.grpc.ProductOrBuilder> 
+    public java.util.List<? extends com.slaughterhouse.grpc.ProductProtoOrBuilder> 
          getProductsOrBuilderList() {
       if (productsBuilder_ != null) {
         return productsBuilder_.getMessageOrBuilderList();
@@ -682,33 +682,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public com.slaughterhouse.grpc.Product.Builder addProductsBuilder() {
+    public com.slaughterhouse.grpc.ProductProto.Builder addProductsBuilder() {
       return getProductsFieldBuilder().addBuilder(
-          com.slaughterhouse.grpc.Product.getDefaultInstance());
+          com.slaughterhouse.grpc.ProductProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public com.slaughterhouse.grpc.Product.Builder addProductsBuilder(
+    public com.slaughterhouse.grpc.ProductProto.Builder addProductsBuilder(
         int index) {
       return getProductsFieldBuilder().addBuilder(
-          index, com.slaughterhouse.grpc.Product.getDefaultInstance());
+          index, com.slaughterhouse.grpc.ProductProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .via.pro3.slaughterhouse.Product products = 1;</code>
+     * <code>repeated .via.pro3.slaughterhouse.ProductProto products = 1;</code>
      */
-    public java.util.List<com.slaughterhouse.grpc.Product.Builder> 
+    public java.util.List<com.slaughterhouse.grpc.ProductProto.Builder> 
          getProductsBuilderList() {
       return getProductsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.slaughterhouse.grpc.Product, com.slaughterhouse.grpc.Product.Builder, com.slaughterhouse.grpc.ProductOrBuilder> 
+        com.slaughterhouse.grpc.ProductProto, com.slaughterhouse.grpc.ProductProto.Builder, com.slaughterhouse.grpc.ProductProtoOrBuilder> 
         getProductsFieldBuilder() {
       if (productsBuilder_ == null) {
         productsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.slaughterhouse.grpc.Product, com.slaughterhouse.grpc.Product.Builder, com.slaughterhouse.grpc.ProductOrBuilder>(
+            com.slaughterhouse.grpc.ProductProto, com.slaughterhouse.grpc.ProductProto.Builder, com.slaughterhouse.grpc.ProductProtoOrBuilder>(
                 products_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

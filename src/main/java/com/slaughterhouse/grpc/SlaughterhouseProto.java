@@ -15,30 +15,30 @@ public final class SlaughterhouseProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_via_pro3_slaughterhouse_Animal_descriptor;
+    internal_static_via_pro3_slaughterhouse_AnimalProto_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_via_pro3_slaughterhouse_Animal_fieldAccessorTable;
+      internal_static_via_pro3_slaughterhouse_AnimalProto_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_via_pro3_slaughterhouse_AnimalPart_descriptor;
+    internal_static_via_pro3_slaughterhouse_AnimalPartProto_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_via_pro3_slaughterhouse_AnimalPart_fieldAccessorTable;
+      internal_static_via_pro3_slaughterhouse_AnimalPartProto_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_via_pro3_slaughterhouse_Tray_descriptor;
+    internal_static_via_pro3_slaughterhouse_TrayProto_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_via_pro3_slaughterhouse_Tray_fieldAccessorTable;
+      internal_static_via_pro3_slaughterhouse_TrayProto_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_via_pro3_slaughterhouse_Product_descriptor;
+    internal_static_via_pro3_slaughterhouse_ProductProto_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_via_pro3_slaughterhouse_Product_fieldAccessorTable;
+      internal_static_via_pro3_slaughterhouse_ProductProto_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_via_pro3_slaughterhouse_ProductToPart_descriptor;
+    internal_static_via_pro3_slaughterhouse_ProductToPartProto_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_via_pro3_slaughterhouse_ProductToPart_fieldAccessorTable;
+      internal_static_via_pro3_slaughterhouse_ProductToPartProto_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_via_pro3_slaughterhouse_Error_descriptor;
   static final 
@@ -145,110 +145,113 @@ public final class SlaughterhouseProto {
     java.lang.String[] descriptorData = {
       "\n\024slaughterhouse.proto\022\027via.pro3.slaught" +
       "erhouse\032\037google/protobuf/timestamp.proto" +
-      "\032\033google/protobuf/empty.proto\"s\n\006Animal\022" +
-      "\n\n\002id\030\001 \001(\003\022\033\n\023registration_number\030\002 \001(\t" +
-      "\022\016\n\006weight\030\003 \001(\001\0220\n\014arrival_time\030\004 \001(\0132\032" +
-      ".google.protobuf.Timestamp\"N\n\nAnimalPart" +
-      "\022\n\n\002id\030\001 \001(\005\022\021\n\tanimal_id\030\002 \001(\005\022\021\n\tpart_" +
-      "type\030\003 \001(\t\022\016\n\006weight\030\004 \001(\001\"9\n\004Tray\022\n\n\002id" +
-      "\030\001 \001(\005\022\021\n\tpart_type\030\002 \001(\t\022\022\n\nmax_weight\030" +
-      "\003 \001(\001\"8\n\007Product\022\n\n\002id\030\001 \001(\005\022\014\n\004name\030\002 \001" +
-      "(\t\022\023\n\013description\030\003 \001(\t\"R\n\rProductToPart" +
-      "\022\n\n\002id\030\001 \001(\005\022\022\n\nproduct_id\030\002 \001(\005\022\017\n\007part" +
-      "_id\030\003 \001(\005\022\020\n\010quantity\030\004 \001(\005\"&\n\005Error\022\014\n\004" +
-      "code\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"\034\n\016GetByIdRe" +
-      "quest\022\n\n\002id\030\001 \001(\005\"\037\n\021DeleteByIdRequest\022\n" +
-      "\n\002id\030\001 \001(\005\"?\n\016DeleteResponse\022-\n\005error\030\001 " +
-      "\001(\0132\036.via.pro3.slaughterhouse.Error\"F\n\023C" +
-      "reateAnimalRequest\022/\n\006animal\030\001 \001(\0132\037.via" +
-      ".pro3.slaughterhouse.Animal\"v\n\024CreateAni" +
-      "malResponse\022/\n\006animal\030\001 \001(\0132\037.via.pro3.s" +
-      "laughterhouse.Animal\022-\n\005error\030\002 \001(\0132\036.vi" +
-      "a.pro3.slaughterhouse.Error\"G\n\023ListAnima" +
-      "lsResponse\0220\n\007animals\030\001 \003(\0132\037.via.pro3.s" +
-      "laughterhouse.Animal\"L\n\027CreateAnimalPart" +
-      "Request\0221\n\004part\030\001 \001(\0132#.via.pro3.slaught" +
-      "erhouse.AnimalPart\"|\n\030CreateAnimalPartRe" +
-      "sponse\0221\n\004part\030\001 \001(\0132#.via.pro3.slaughte" +
-      "rhouse.AnimalPart\022-\n\005error\030\002 \001(\0132\036.via.p" +
-      "ro3.slaughterhouse.Error\"M\n\027ListAnimalPa" +
-      "rtsResponse\0222\n\005parts\030\001 \003(\0132#.via.pro3.sl" +
-      "aughterhouse.AnimalPart\"@\n\021CreateTrayReq" +
-      "uest\022+\n\004tray\030\001 \001(\0132\035.via.pro3.slaughterh" +
-      "ouse.Tray\"p\n\022CreateTrayResponse\022+\n\004tray\030" +
-      "\001 \001(\0132\035.via.pro3.slaughterhouse.Tray\022-\n\005" +
-      "error\030\002 \001(\0132\036.via.pro3.slaughterhouse.Er" +
-      "ror\"A\n\021ListTraysResponse\022,\n\005trays\030\001 \003(\0132" +
-      "\035.via.pro3.slaughterhouse.Tray\"I\n\024Create" +
-      "ProductRequest\0221\n\007product\030\001 \001(\0132 .via.pr" +
-      "o3.slaughterhouse.Product\"y\n\025CreateProdu" +
-      "ctResponse\0221\n\007product\030\001 \001(\0132 .via.pro3.s" +
-      "laughterhouse.Product\022-\n\005error\030\002 \001(\0132\036.v" +
-      "ia.pro3.slaughterhouse.Error\"J\n\024ListProd" +
-      "uctsResponse\0222\n\010products\030\001 \003(\0132 .via.pro" +
-      "3.slaughterhouse.Product\"U\n\032CreateProduc" +
-      "tToPartRequest\0227\n\007mapping\030\001 \001(\0132&.via.pr" +
-      "o3.slaughterhouse.ProductToPart\"\205\001\n\033Crea" +
-      "teProductToPartResponse\0227\n\007mapping\030\001 \001(\013" +
-      "2&.via.pro3.slaughterhouse.ProductToPart" +
-      "\022-\n\005error\030\002 \001(\0132\036.via.pro3.slaughterhous" +
-      "e.Error\"U\n\031ListProductToPartResponse\0228\n\010" +
-      "mappings\030\001 \003(\0132&.via.pro3.slaughterhouse" +
-      ".ProductToPart2\215\003\n\rAnimalService\022k\n\014Crea" +
-      "teAnimal\022,.via.pro3.slaughterhouse.Creat" +
-      "eAnimalRequest\032-.via.pro3.slaughterhouse" +
-      ".CreateAnimalResponse\022U\n\tGetAnimal\022\'.via" +
-      ".pro3.slaughterhouse.GetByIdRequest\032\037.vi" +
-      "a.pro3.slaughterhouse.Animal\022c\n\014DeleteAn" +
-      "imal\022*.via.pro3.slaughterhouse.DeleteByI" +
-      "dRequest\032\'.via.pro3.slaughterhouse.Delet" +
-      "eResponse\022S\n\013ListAnimals\022\026.google.protob" +
-      "uf.Empty\032,.via.pro3.slaughterhouse.ListA" +
-      "nimalsResponse2\261\003\n\021AnimalPartService\022w\n\020" +
-      "CreateAnimalPart\0220.via.pro3.slaughterhou" +
-      "se.CreateAnimalPartRequest\0321.via.pro3.sl" +
-      "aughterhouse.CreateAnimalPartResponse\022]\n" +
-      "\rGetAnimalPart\022\'.via.pro3.slaughterhouse" +
-      ".GetByIdRequest\032#.via.pro3.slaughterhous" +
-      "e.AnimalPart\022g\n\020DeleteAnimalPart\022*.via.p" +
-      "ro3.slaughterhouse.DeleteByIdRequest\032\'.v" +
-      "ia.pro3.slaughterhouse.DeleteResponse\022[\n" +
-      "\017ListAnimalParts\022\026.google.protobuf.Empty" +
-      "\0320.via.pro3.slaughterhouse.ListAnimalPar" +
-      "tsResponse2\373\002\n\013TrayService\022e\n\nCreateTray" +
-      "\022*.via.pro3.slaughterhouse.CreateTrayReq" +
-      "uest\032+.via.pro3.slaughterhouse.CreateTra" +
-      "yResponse\022Q\n\007GetTray\022\'.via.pro3.slaughte" +
-      "rhouse.GetByIdRequest\032\035.via.pro3.slaught" +
-      "erhouse.Tray\022a\n\nDeleteTray\022*.via.pro3.sl" +
-      "aughterhouse.DeleteByIdRequest\032\'.via.pro" +
-      "3.slaughterhouse.DeleteResponse\022O\n\tListT" +
-      "rays\022\026.google.protobuf.Empty\032*.via.pro3." +
-      "slaughterhouse.ListTraysResponse2\226\003\n\016Pro" +
-      "ductService\022n\n\rCreateProduct\022-.via.pro3." +
-      "slaughterhouse.CreateProductRequest\032..vi" +
-      "a.pro3.slaughterhouse.CreateProductRespo" +
-      "nse\022W\n\nGetProduct\022\'.via.pro3.slaughterho" +
-      "use.GetByIdRequest\032 .via.pro3.slaughterh" +
-      "ouse.Product\022d\n\rDeleteProduct\022*.via.pro3" +
-      ".slaughterhouse.DeleteByIdRequest\032\'.via." +
-      "pro3.slaughterhouse.DeleteResponse\022U\n\014Li" +
-      "stProducts\022\026.google.protobuf.Empty\032-.via" +
-      ".pro3.slaughterhouse.ListProductsRespons" +
-      "e2\313\003\n\024ProductToPartService\022\200\001\n\023CreatePro" +
-      "ductToPart\0223.via.pro3.slaughterhouse.Cre" +
-      "ateProductToPartRequest\0324.via.pro3.slaug" +
-      "hterhouse.CreateProductToPartResponse\022c\n" +
-      "\020GetProductToPart\022\'.via.pro3.slaughterho" +
-      "use.GetByIdRequest\032&.via.pro3.slaughterh" +
-      "ouse.ProductToPart\022j\n\023DeleteProductToPar" +
-      "t\022*.via.pro3.slaughterhouse.DeleteByIdRe" +
-      "quest\032\'.via.pro3.slaughterhouse.DeleteRe" +
-      "sponse\022_\n\021ListProductToPart\022\026.google.pro" +
-      "tobuf.Empty\0322.via.pro3.slaughterhouse.Li" +
-      "stProductToPartResponseB0\n\027com.slaughter" +
-      "house.grpcB\023SlaughterhouseProtoP\001b\006proto" +
-      "3"
+      "\032\033google/protobuf/empty.proto\"\210\001\n\013Animal" +
+      "Proto\022\n\n\002id\030\001 \001(\005\022\033\n\023registration_number" +
+      "\030\002 \001(\t\022\016\n\006weight\030\003 \001(\001\0220\n\014arrival_time\030\004" +
+      " \001(\0132\032.google.protobuf.Timestamp\022\016\n\006orig" +
+      "in\030\005 \001(\t\"S\n\017AnimalPartProto\022\n\n\002id\030\001 \001(\005\022" +
+      "\021\n\tanimal_id\030\002 \001(\005\022\021\n\tpart_type\030\003 \001(\t\022\016\n" +
+      "\006weight\030\004 \001(\001\">\n\tTrayProto\022\n\n\002id\030\001 \001(\005\022\021" +
+      "\n\tpart_type\030\002 \001(\t\022\022\n\nmax_weight\030\003 \001(\001\"=\n" +
+      "\014ProductProto\022\n\n\002id\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\022" +
+      "\023\n\013description\030\003 \001(\t\"W\n\022ProductToPartPro" +
+      "to\022\n\n\002id\030\001 \001(\005\022\022\n\nproduct_id\030\002 \001(\005\022\017\n\007pa" +
+      "rt_id\030\003 \001(\005\022\020\n\010quantity\030\004 \001(\005\"&\n\005Error\022\014" +
+      "\n\004code\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"\034\n\016GetById" +
+      "Request\022\n\n\002id\030\001 \001(\005\"\037\n\021DeleteByIdRequest" +
+      "\022\n\n\002id\030\001 \001(\005\"?\n\016DeleteResponse\022-\n\005error\030" +
+      "\001 \001(\0132\036.via.pro3.slaughterhouse.Error\"K\n" +
+      "\023CreateAnimalRequest\0224\n\006animal\030\001 \001(\0132$.v" +
+      "ia.pro3.slaughterhouse.AnimalProto\"{\n\024Cr" +
+      "eateAnimalResponse\0224\n\006animal\030\001 \001(\0132$.via" +
+      ".pro3.slaughterhouse.AnimalProto\022-\n\005erro" +
+      "r\030\002 \001(\0132\036.via.pro3.slaughterhouse.Error\"" +
+      "L\n\023ListAnimalsResponse\0225\n\007animals\030\001 \003(\0132" +
+      "$.via.pro3.slaughterhouse.AnimalProto\"Q\n" +
+      "\027CreateAnimalPartRequest\0226\n\004part\030\001 \001(\0132(" +
+      ".via.pro3.slaughterhouse.AnimalPartProto" +
+      "\"\201\001\n\030CreateAnimalPartResponse\0226\n\004part\030\001 " +
+      "\001(\0132(.via.pro3.slaughterhouse.AnimalPart" +
+      "Proto\022-\n\005error\030\002 \001(\0132\036.via.pro3.slaughte" +
+      "rhouse.Error\"R\n\027ListAnimalPartsResponse\022" +
+      "7\n\005parts\030\001 \003(\0132(.via.pro3.slaughterhouse" +
+      ".AnimalPartProto\"E\n\021CreateTrayRequest\0220\n" +
+      "\004tray\030\001 \001(\0132\".via.pro3.slaughterhouse.Tr" +
+      "ayProto\"u\n\022CreateTrayResponse\0220\n\004tray\030\001 " +
+      "\001(\0132\".via.pro3.slaughterhouse.TrayProto\022" +
+      "-\n\005error\030\002 \001(\0132\036.via.pro3.slaughterhouse" +
+      ".Error\"F\n\021ListTraysResponse\0221\n\005trays\030\001 \003" +
+      "(\0132\".via.pro3.slaughterhouse.TrayProto\"N" +
+      "\n\024CreateProductRequest\0226\n\007product\030\001 \001(\0132" +
+      "%.via.pro3.slaughterhouse.ProductProto\"~" +
+      "\n\025CreateProductResponse\0226\n\007product\030\001 \001(\013" +
+      "2%.via.pro3.slaughterhouse.ProductProto\022" +
+      "-\n\005error\030\002 \001(\0132\036.via.pro3.slaughterhouse" +
+      ".Error\"O\n\024ListProductsResponse\0227\n\010produc" +
+      "ts\030\001 \003(\0132%.via.pro3.slaughterhouse.Produ" +
+      "ctProto\"Z\n\032CreateProductToPartRequest\022<\n" +
+      "\007mapping\030\001 \001(\0132+.via.pro3.slaughterhouse" +
+      ".ProductToPartProto\"\212\001\n\033CreateProductToP" +
+      "artResponse\022<\n\007mapping\030\001 \001(\0132+.via.pro3." +
+      "slaughterhouse.ProductToPartProto\022-\n\005err" +
+      "or\030\002 \001(\0132\036.via.pro3.slaughterhouse.Error" +
+      "\"Z\n\031ListProductToPartResponse\022=\n\010mapping" +
+      "s\030\001 \003(\0132+.via.pro3.slaughterhouse.Produc" +
+      "tToPartProto2\222\003\n\rAnimalService\022k\n\014Create" +
+      "Animal\022,.via.pro3.slaughterhouse.CreateA" +
+      "nimalRequest\032-.via.pro3.slaughterhouse.C" +
+      "reateAnimalResponse\022Z\n\tGetAnimal\022\'.via.p" +
+      "ro3.slaughterhouse.GetByIdRequest\032$.via." +
+      "pro3.slaughterhouse.AnimalProto\022c\n\014Delet" +
+      "eAnimal\022*.via.pro3.slaughterhouse.Delete" +
+      "ByIdRequest\032\'.via.pro3.slaughterhouse.De" +
+      "leteResponse\022S\n\013ListAnimals\022\026.google.pro" +
+      "tobuf.Empty\032,.via.pro3.slaughterhouse.Li" +
+      "stAnimalsResponse2\266\003\n\021AnimalPartService\022" +
+      "w\n\020CreateAnimalPart\0220.via.pro3.slaughter" +
+      "house.CreateAnimalPartRequest\0321.via.pro3" +
+      ".slaughterhouse.CreateAnimalPartResponse" +
+      "\022b\n\rGetAnimalPart\022\'.via.pro3.slaughterho" +
+      "use.GetByIdRequest\032(.via.pro3.slaughterh" +
+      "ouse.AnimalPartProto\022g\n\020DeleteAnimalPart" +
+      "\022*.via.pro3.slaughterhouse.DeleteByIdReq" +
+      "uest\032\'.via.pro3.slaughterhouse.DeleteRes" +
+      "ponse\022[\n\017ListAnimalParts\022\026.google.protob" +
+      "uf.Empty\0320.via.pro3.slaughterhouse.ListA" +
+      "nimalPartsResponse2\200\003\n\013TrayService\022e\n\nCr" +
+      "eateTray\022*.via.pro3.slaughterhouse.Creat" +
+      "eTrayRequest\032+.via.pro3.slaughterhouse.C" +
+      "reateTrayResponse\022V\n\007GetTray\022\'.via.pro3." +
+      "slaughterhouse.GetByIdRequest\032\".via.pro3" +
+      ".slaughterhouse.TrayProto\022a\n\nDeleteTray\022" +
+      "*.via.pro3.slaughterhouse.DeleteByIdRequ" +
+      "est\032\'.via.pro3.slaughterhouse.DeleteResp" +
+      "onse\022O\n\tListTrays\022\026.google.protobuf.Empt" +
+      "y\032*.via.pro3.slaughterhouse.ListTraysRes" +
+      "ponse2\233\003\n\016ProductService\022n\n\rCreateProduc" +
+      "t\022-.via.pro3.slaughterhouse.CreateProduc" +
+      "tRequest\032..via.pro3.slaughterhouse.Creat" +
+      "eProductResponse\022\\\n\nGetProduct\022\'.via.pro" +
+      "3.slaughterhouse.GetByIdRequest\032%.via.pr" +
+      "o3.slaughterhouse.ProductProto\022d\n\rDelete" +
+      "Product\022*.via.pro3.slaughterhouse.Delete" +
+      "ByIdRequest\032\'.via.pro3.slaughterhouse.De" +
+      "leteResponse\022U\n\014ListProducts\022\026.google.pr" +
+      "otobuf.Empty\032-.via.pro3.slaughterhouse.L" +
+      "istProductsResponse2\320\003\n\024ProductToPartSer" +
+      "vice\022\200\001\n\023CreateProductToPart\0223.via.pro3." +
+      "slaughterhouse.CreateProductToPartReques" +
+      "t\0324.via.pro3.slaughterhouse.CreateProduc" +
+      "tToPartResponse\022h\n\020GetProductToPart\022\'.vi" +
+      "a.pro3.slaughterhouse.GetByIdRequest\032+.v" +
+      "ia.pro3.slaughterhouse.ProductToPartProt" +
+      "o\022j\n\023DeleteProductToPart\022*.via.pro3.slau" +
+      "ghterhouse.DeleteByIdRequest\032\'.via.pro3." +
+      "slaughterhouse.DeleteResponse\022_\n\021ListPro" +
+      "ductToPart\022\026.google.protobuf.Empty\0322.via" +
+      ".pro3.slaughterhouse.ListProductToPartRe" +
+      "sponseB0\n\027com.slaughterhouse.grpcB\023Slaug" +
+      "hterhouseProtoP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -256,35 +259,35 @@ public final class SlaughterhouseProto {
           com.google.protobuf.TimestampProto.getDescriptor(),
           com.google.protobuf.EmptyProto.getDescriptor(),
         });
-    internal_static_via_pro3_slaughterhouse_Animal_descriptor =
+    internal_static_via_pro3_slaughterhouse_AnimalProto_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_via_pro3_slaughterhouse_Animal_fieldAccessorTable = new
+    internal_static_via_pro3_slaughterhouse_AnimalProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_via_pro3_slaughterhouse_Animal_descriptor,
-        new java.lang.String[] { "Id", "RegistrationNumber", "Weight", "ArrivalTime", });
-    internal_static_via_pro3_slaughterhouse_AnimalPart_descriptor =
+        internal_static_via_pro3_slaughterhouse_AnimalProto_descriptor,
+        new java.lang.String[] { "Id", "RegistrationNumber", "Weight", "ArrivalTime", "Origin", });
+    internal_static_via_pro3_slaughterhouse_AnimalPartProto_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_via_pro3_slaughterhouse_AnimalPart_fieldAccessorTable = new
+    internal_static_via_pro3_slaughterhouse_AnimalPartProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_via_pro3_slaughterhouse_AnimalPart_descriptor,
+        internal_static_via_pro3_slaughterhouse_AnimalPartProto_descriptor,
         new java.lang.String[] { "Id", "AnimalId", "PartType", "Weight", });
-    internal_static_via_pro3_slaughterhouse_Tray_descriptor =
+    internal_static_via_pro3_slaughterhouse_TrayProto_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_via_pro3_slaughterhouse_Tray_fieldAccessorTable = new
+    internal_static_via_pro3_slaughterhouse_TrayProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_via_pro3_slaughterhouse_Tray_descriptor,
+        internal_static_via_pro3_slaughterhouse_TrayProto_descriptor,
         new java.lang.String[] { "Id", "PartType", "MaxWeight", });
-    internal_static_via_pro3_slaughterhouse_Product_descriptor =
+    internal_static_via_pro3_slaughterhouse_ProductProto_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_via_pro3_slaughterhouse_Product_fieldAccessorTable = new
+    internal_static_via_pro3_slaughterhouse_ProductProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_via_pro3_slaughterhouse_Product_descriptor,
+        internal_static_via_pro3_slaughterhouse_ProductProto_descriptor,
         new java.lang.String[] { "Id", "Name", "Description", });
-    internal_static_via_pro3_slaughterhouse_ProductToPart_descriptor =
+    internal_static_via_pro3_slaughterhouse_ProductToPartProto_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_via_pro3_slaughterhouse_ProductToPart_fieldAccessorTable = new
+    internal_static_via_pro3_slaughterhouse_ProductToPartProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_via_pro3_slaughterhouse_ProductToPart_descriptor,
+        internal_static_via_pro3_slaughterhouse_ProductToPartProto_descriptor,
         new java.lang.String[] { "Id", "ProductId", "PartId", "Quantity", });
     internal_static_via_pro3_slaughterhouse_Error_descriptor =
       getDescriptor().getMessageTypes().get(5);

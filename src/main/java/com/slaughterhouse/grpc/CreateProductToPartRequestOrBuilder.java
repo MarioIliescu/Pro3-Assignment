@@ -8,17 +8,17 @@ public interface CreateProductToPartRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
    * @return Whether the mapping field is set.
    */
   boolean hasMapping();
   /**
-   * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
    * @return The mapping.
    */
-  com.slaughterhouse.grpc.ProductToPart getMapping();
+  com.slaughterhouse.grpc.ProductToPartProto getMapping();
   /**
-   * <code>.via.pro3.slaughterhouse.ProductToPart mapping = 1;</code>
+   * <code>.via.pro3.slaughterhouse.ProductToPartProto mapping = 1;</code>
    */
-  com.slaughterhouse.grpc.ProductToPartOrBuilder getMappingOrBuilder();
+  com.slaughterhouse.grpc.ProductToPartProtoOrBuilder getMappingOrBuilder();
 }

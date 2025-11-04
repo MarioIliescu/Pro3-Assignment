@@ -8,26 +8,26 @@ public interface ListTraysResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
-  java.util.List<com.slaughterhouse.grpc.Tray> 
+  java.util.List<com.slaughterhouse.grpc.TrayProto> 
       getTraysList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
-  com.slaughterhouse.grpc.Tray getTrays(int index);
+  com.slaughterhouse.grpc.TrayProto getTrays(int index);
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
   int getTraysCount();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
-  java.util.List<? extends com.slaughterhouse.grpc.TrayOrBuilder> 
+  java.util.List<? extends com.slaughterhouse.grpc.TrayProtoOrBuilder> 
       getTraysOrBuilderList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.Tray trays = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.TrayProto trays = 1;</code>
    */
-  com.slaughterhouse.grpc.TrayOrBuilder getTraysOrBuilder(
+  com.slaughterhouse.grpc.TrayProtoOrBuilder getTraysOrBuilder(
       int index);
 }

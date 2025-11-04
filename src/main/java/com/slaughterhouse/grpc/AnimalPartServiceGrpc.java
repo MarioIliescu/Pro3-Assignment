@@ -47,28 +47,28 @@ public final class AnimalPartServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.AnimalPart> getGetAnimalPartMethod;
+      com.slaughterhouse.grpc.AnimalPartProto> getGetAnimalPartMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetAnimalPart",
       requestType = com.slaughterhouse.grpc.GetByIdRequest.class,
-      responseType = com.slaughterhouse.grpc.AnimalPart.class,
+      responseType = com.slaughterhouse.grpc.AnimalPartProto.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.AnimalPart> getGetAnimalPartMethod() {
-    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.AnimalPart> getGetAnimalPartMethod;
+      com.slaughterhouse.grpc.AnimalPartProto> getGetAnimalPartMethod() {
+    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.AnimalPartProto> getGetAnimalPartMethod;
     if ((getGetAnimalPartMethod = AnimalPartServiceGrpc.getGetAnimalPartMethod) == null) {
       synchronized (AnimalPartServiceGrpc.class) {
         if ((getGetAnimalPartMethod = AnimalPartServiceGrpc.getGetAnimalPartMethod) == null) {
           AnimalPartServiceGrpc.getGetAnimalPartMethod = getGetAnimalPartMethod =
-              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.AnimalPart>newBuilder()
+              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.AnimalPartProto>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetAnimalPart"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.slaughterhouse.grpc.GetByIdRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.slaughterhouse.grpc.AnimalPart.getDefaultInstance()))
+                  com.slaughterhouse.grpc.AnimalPartProto.getDefaultInstance()))
               .setSchemaDescriptor(new AnimalPartServiceMethodDescriptorSupplier("GetAnimalPart"))
               .build();
         }
@@ -197,7 +197,7 @@ public final class AnimalPartServiceGrpc {
     /**
      */
     default void getAnimalPart(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalPart> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalPartProto> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAnimalPartMethod(), responseObserver);
     }
 
@@ -254,7 +254,7 @@ public final class AnimalPartServiceGrpc {
     /**
      */
     public void getAnimalPart(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalPart> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalPartProto> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAnimalPartMethod(), getCallOptions()), request, responseObserver);
     }
@@ -301,7 +301,7 @@ public final class AnimalPartServiceGrpc {
 
     /**
      */
-    public com.slaughterhouse.grpc.AnimalPart getAnimalPart(com.slaughterhouse.grpc.GetByIdRequest request) {
+    public com.slaughterhouse.grpc.AnimalPartProto getAnimalPart(com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAnimalPartMethod(), getCallOptions(), request);
     }
@@ -347,7 +347,7 @@ public final class AnimalPartServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.AnimalPart> getAnimalPart(
+    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.AnimalPartProto> getAnimalPart(
         com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAnimalPartMethod(), getCallOptions()), request);
@@ -398,7 +398,7 @@ public final class AnimalPartServiceGrpc {
           break;
         case METHODID_GET_ANIMAL_PART:
           serviceImpl.getAnimalPart((com.slaughterhouse.grpc.GetByIdRequest) request,
-              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalPart>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.AnimalPartProto>) responseObserver);
           break;
         case METHODID_DELETE_ANIMAL_PART:
           serviceImpl.deleteAnimalPart((com.slaughterhouse.grpc.DeleteByIdRequest) request,
@@ -438,7 +438,7 @@ public final class AnimalPartServiceGrpc {
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
               com.slaughterhouse.grpc.GetByIdRequest,
-              com.slaughterhouse.grpc.AnimalPart>(
+              com.slaughterhouse.grpc.AnimalPartProto>(
                 service, METHODID_GET_ANIMAL_PART)))
         .addMethod(
           getDeleteAnimalPartMethod(),

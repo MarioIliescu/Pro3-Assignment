@@ -47,28 +47,28 @@ public final class TrayServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.Tray> getGetTrayMethod;
+      com.slaughterhouse.grpc.TrayProto> getGetTrayMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTray",
       requestType = com.slaughterhouse.grpc.GetByIdRequest.class,
-      responseType = com.slaughterhouse.grpc.Tray.class,
+      responseType = com.slaughterhouse.grpc.TrayProto.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.Tray> getGetTrayMethod() {
-    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.Tray> getGetTrayMethod;
+      com.slaughterhouse.grpc.TrayProto> getGetTrayMethod() {
+    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.TrayProto> getGetTrayMethod;
     if ((getGetTrayMethod = TrayServiceGrpc.getGetTrayMethod) == null) {
       synchronized (TrayServiceGrpc.class) {
         if ((getGetTrayMethod = TrayServiceGrpc.getGetTrayMethod) == null) {
           TrayServiceGrpc.getGetTrayMethod = getGetTrayMethod =
-              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.Tray>newBuilder()
+              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.TrayProto>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetTray"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.slaughterhouse.grpc.GetByIdRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.slaughterhouse.grpc.Tray.getDefaultInstance()))
+                  com.slaughterhouse.grpc.TrayProto.getDefaultInstance()))
               .setSchemaDescriptor(new TrayServiceMethodDescriptorSupplier("GetTray"))
               .build();
         }
@@ -197,7 +197,7 @@ public final class TrayServiceGrpc {
     /**
      */
     default void getTray(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Tray> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.TrayProto> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTrayMethod(), responseObserver);
     }
 
@@ -254,7 +254,7 @@ public final class TrayServiceGrpc {
     /**
      */
     public void getTray(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Tray> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.TrayProto> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTrayMethod(), getCallOptions()), request, responseObserver);
     }
@@ -301,7 +301,7 @@ public final class TrayServiceGrpc {
 
     /**
      */
-    public com.slaughterhouse.grpc.Tray getTray(com.slaughterhouse.grpc.GetByIdRequest request) {
+    public com.slaughterhouse.grpc.TrayProto getTray(com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTrayMethod(), getCallOptions(), request);
     }
@@ -347,7 +347,7 @@ public final class TrayServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.Tray> getTray(
+    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.TrayProto> getTray(
         com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTrayMethod(), getCallOptions()), request);
@@ -398,7 +398,7 @@ public final class TrayServiceGrpc {
           break;
         case METHODID_GET_TRAY:
           serviceImpl.getTray((com.slaughterhouse.grpc.GetByIdRequest) request,
-              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.Tray>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.TrayProto>) responseObserver);
           break;
         case METHODID_DELETE_TRAY:
           serviceImpl.deleteTray((com.slaughterhouse.grpc.DeleteByIdRequest) request,
@@ -438,7 +438,7 @@ public final class TrayServiceGrpc {
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
               com.slaughterhouse.grpc.GetByIdRequest,
-              com.slaughterhouse.grpc.Tray>(
+              com.slaughterhouse.grpc.TrayProto>(
                 service, METHODID_GET_TRAY)))
         .addMethod(
           getDeleteTrayMethod(),

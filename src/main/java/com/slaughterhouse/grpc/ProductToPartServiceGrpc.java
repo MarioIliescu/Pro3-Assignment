@@ -47,28 +47,28 @@ public final class ProductToPartServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.ProductToPart> getGetProductToPartMethod;
+      com.slaughterhouse.grpc.ProductToPartProto> getGetProductToPartMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetProductToPart",
       requestType = com.slaughterhouse.grpc.GetByIdRequest.class,
-      responseType = com.slaughterhouse.grpc.ProductToPart.class,
+      responseType = com.slaughterhouse.grpc.ProductToPartProto.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest,
-      com.slaughterhouse.grpc.ProductToPart> getGetProductToPartMethod() {
-    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.ProductToPart> getGetProductToPartMethod;
+      com.slaughterhouse.grpc.ProductToPartProto> getGetProductToPartMethod() {
+    io.grpc.MethodDescriptor<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.ProductToPartProto> getGetProductToPartMethod;
     if ((getGetProductToPartMethod = ProductToPartServiceGrpc.getGetProductToPartMethod) == null) {
       synchronized (ProductToPartServiceGrpc.class) {
         if ((getGetProductToPartMethod = ProductToPartServiceGrpc.getGetProductToPartMethod) == null) {
           ProductToPartServiceGrpc.getGetProductToPartMethod = getGetProductToPartMethod =
-              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.ProductToPart>newBuilder()
+              io.grpc.MethodDescriptor.<com.slaughterhouse.grpc.GetByIdRequest, com.slaughterhouse.grpc.ProductToPartProto>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetProductToPart"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.slaughterhouse.grpc.GetByIdRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.slaughterhouse.grpc.ProductToPart.getDefaultInstance()))
+                  com.slaughterhouse.grpc.ProductToPartProto.getDefaultInstance()))
               .setSchemaDescriptor(new ProductToPartServiceMethodDescriptorSupplier("GetProductToPart"))
               .build();
         }
@@ -197,7 +197,7 @@ public final class ProductToPartServiceGrpc {
     /**
      */
     default void getProductToPart(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductToPart> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductToPartProto> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetProductToPartMethod(), responseObserver);
     }
 
@@ -254,7 +254,7 @@ public final class ProductToPartServiceGrpc {
     /**
      */
     public void getProductToPart(com.slaughterhouse.grpc.GetByIdRequest request,
-        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductToPart> responseObserver) {
+        io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductToPartProto> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetProductToPartMethod(), getCallOptions()), request, responseObserver);
     }
@@ -301,7 +301,7 @@ public final class ProductToPartServiceGrpc {
 
     /**
      */
-    public com.slaughterhouse.grpc.ProductToPart getProductToPart(com.slaughterhouse.grpc.GetByIdRequest request) {
+    public com.slaughterhouse.grpc.ProductToPartProto getProductToPart(com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetProductToPartMethod(), getCallOptions(), request);
     }
@@ -347,7 +347,7 @@ public final class ProductToPartServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.ProductToPart> getProductToPart(
+    public com.google.common.util.concurrent.ListenableFuture<com.slaughterhouse.grpc.ProductToPartProto> getProductToPart(
         com.slaughterhouse.grpc.GetByIdRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetProductToPartMethod(), getCallOptions()), request);
@@ -398,7 +398,7 @@ public final class ProductToPartServiceGrpc {
           break;
         case METHODID_GET_PRODUCT_TO_PART:
           serviceImpl.getProductToPart((com.slaughterhouse.grpc.GetByIdRequest) request,
-              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductToPart>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.slaughterhouse.grpc.ProductToPartProto>) responseObserver);
           break;
         case METHODID_DELETE_PRODUCT_TO_PART:
           serviceImpl.deleteProductToPart((com.slaughterhouse.grpc.DeleteByIdRequest) request,
@@ -438,7 +438,7 @@ public final class ProductToPartServiceGrpc {
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
               com.slaughterhouse.grpc.GetByIdRequest,
-              com.slaughterhouse.grpc.ProductToPart>(
+              com.slaughterhouse.grpc.ProductToPartProto>(
                 service, METHODID_GET_PRODUCT_TO_PART)))
         .addMethod(
           getDeleteProductToPartMethod(),

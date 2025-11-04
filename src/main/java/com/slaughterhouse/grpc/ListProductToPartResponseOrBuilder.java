@@ -8,26 +8,26 @@ public interface ListProductToPartResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .via.pro3.slaughterhouse.ProductToPart mappings = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductToPartProto mappings = 1;</code>
    */
-  java.util.List<com.slaughterhouse.grpc.ProductToPart> 
+  java.util.List<com.slaughterhouse.grpc.ProductToPartProto> 
       getMappingsList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.ProductToPart mappings = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductToPartProto mappings = 1;</code>
    */
-  com.slaughterhouse.grpc.ProductToPart getMappings(int index);
+  com.slaughterhouse.grpc.ProductToPartProto getMappings(int index);
   /**
-   * <code>repeated .via.pro3.slaughterhouse.ProductToPart mappings = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductToPartProto mappings = 1;</code>
    */
   int getMappingsCount();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.ProductToPart mappings = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductToPartProto mappings = 1;</code>
    */
-  java.util.List<? extends com.slaughterhouse.grpc.ProductToPartOrBuilder> 
+  java.util.List<? extends com.slaughterhouse.grpc.ProductToPartProtoOrBuilder> 
       getMappingsOrBuilderList();
   /**
-   * <code>repeated .via.pro3.slaughterhouse.ProductToPart mappings = 1;</code>
+   * <code>repeated .via.pro3.slaughterhouse.ProductToPartProto mappings = 1;</code>
    */
-  com.slaughterhouse.grpc.ProductToPartOrBuilder getMappingsOrBuilder(
+  com.slaughterhouse.grpc.ProductToPartProtoOrBuilder getMappingsOrBuilder(
       int index);
 }

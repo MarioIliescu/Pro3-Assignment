@@ -1,10 +1,7 @@
 package via.pro3.slaughterhouse.services;
 
-import com.slaughterhouse.grpc.CreateProductToPartRequest;
-import com.slaughterhouse.grpc.CreateProductToPartResponse;
-import com.slaughterhouse.grpc.DeleteResponse;
-import com.slaughterhouse.grpc.ListProductToPartResponse;
-import com.slaughterhouse.grpc.ProductToPart;
+import com.slaughterhouse.grpc.*;
+import com.slaughterhouse.grpc.ProductToPartProto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
@@ -41,7 +38,7 @@ class ProductToPartServiceTest {
         entity.setQuantity(3);
 
         CreateProductToPartRequest request = CreateProductToPartRequest.newBuilder()
-                .setMapping(ProductToPart.newBuilder()
+                .setMapping(ProductToPartProto.newBuilder()
                         .setProductId(10)
                         .setPartId(20)
                         .setQuantity(3)
@@ -110,7 +107,7 @@ class ProductToPartServiceTest {
         when(productToPartRepository.findById(7)).thenReturn(Optional.of(m));
 
         // when
-        com.slaughterhouse.grpc.ProductToPart result = productToPartService.getProductToPart(7);
+        com.slaughterhouse.grpc.ProductToPartProto result = productToPartService.getProductToPart(7);
 
         // then
         assertNotNull(result);
@@ -128,7 +125,7 @@ class ProductToPartServiceTest {
         when(productToPartRepository.findById(999)).thenReturn(Optional.empty());
 
         // when
-        com.slaughterhouse.grpc.ProductToPart result = productToPartService.getProductToPart(999);
+        com.slaughterhouse.grpc.ProductToPartProto result = productToPartService.getProductToPart(999);
 
         // then
         assertNull(result);
